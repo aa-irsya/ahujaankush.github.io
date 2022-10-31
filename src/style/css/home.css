@@ -1,28 +1,28 @@
 @import url(/src/style/min.css/theme.min.css);
 #slideshow {
   width: 100%;
-  height: 25vw;
+  height: 50vh;
   position: relative;
 }
 #slideshow .slideshowIMG {
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: top cover;
+     object-fit: top cover;
   -o-object-position: 0% 10%;
      object-position: 0% 10%;
   width: 100%;
-  max-height: 25vw;
+  height: 50vh;
   overflow: hidden;
 }
 #slideshow .slideshowText {
   position: absolute;
-  margin: 6vw 12vw;
+  margin: 10vh 12vw;
 }
 #slideshow .slideshowText h2 {
   font-family: CaskaydiaNFMono, "Courier New", Courier, monospace;
-  font-size: 6em;
+  font-size: 6vmax;
 }
 #slideshow .slideshowText p {
-  font-size: 2.5em;
+  font-size: 2.5vmax;
   font-family: GoMonoNFMono, "Courier New", Courier, monospace;
 }
 #slideshow .slideshow-control-container {
@@ -45,14 +45,14 @@
 }
 
 .typeWriterGreetings {
-  font-size: 4.5vmax;
+  font-size: 5.5vmax;
   font-family: JetBrainsMonoNFMono, "Courier New", Courier, monospace;
   display: inline;
 }
 
 .typeWriterGreetingsIndicator {
   content: "";
-  font-size: 4.5vmax;
+  font-size: 5.5vmax;
   width: 5px;
   background-color: var(--color14);
   color: transparent;
@@ -79,13 +79,13 @@
   }
 }
 .typeWriterComments {
-  font-size: 1.075vmax;
+  font-size: 1.35vmax;
   font-family: JetBrainsMonoNFMono, "Courier New", Courier, monospace;
   display: inline-block;
   margin-top: 0.33vmax;
 }
 .typeWriterComments .coloredComment {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 #siteLinkBtnCont {
@@ -95,9 +95,9 @@
   margin-right: 2vmax;
   box-sizing: border-box;
   background-color: transparent;
-  padding: 0.75em 2.25vmax;
+  padding: 1.25vmax 2.75vmax;
   border-radius: 0px;
-  font-size: 1vmax;
+  font-size: 1.25vmax;
   font-family: CaskaydiaNFMono, "Courier New", Courier, monospace;
   border-style: solid;
   transition: 0.4s ease-in-out;
