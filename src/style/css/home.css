@@ -5,10 +5,10 @@
   position: relative;
 }
 #slideshow .slideshowIMG {
-  -o-object-fit: top cover;
-     object-fit: top cover;
-  -o-object-position: 0% 10%;
-     object-position: 0% 10%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
   width: 100%;
   height: 50vh;
   overflow: hidden;
