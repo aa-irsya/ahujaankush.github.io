@@ -1,2 +1,2 @@
 # Pyxosite
-# personal website build with html, scss & js
+personal website build with html, scss & js
