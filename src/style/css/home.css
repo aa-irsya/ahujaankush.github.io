@@ -91,7 +91,7 @@
 #siteLinkBtnCont {
   margin: 2.5vmax;
 }
-#siteLinkBtnCont button {
+#siteLinkBtnCont a {
   margin-right: 2vmax;
   box-sizing: border-box;
   background-color: transparent;
@@ -99,38 +99,29 @@
   border-radius: 0px;
   font-size: 1.25vmax;
   font-family: CaskaydiaNFMono, "Courier New", Courier, monospace;
-  border-style: solid;
+  border: 2px solid var(--color4);
   transition: 0.4s ease-in-out;
   display: inline-block;
   overflow: hidden;
+  text-decoration: none;
 }
-#siteLinkBtnCont button#projectsBtn {
+#siteLinkBtnCont #projectsBtn {
   margin-right: 2vmax;
   background-color: transparent;
   border-color: var(--color5);
   color: var(--color5);
 }
-#siteLinkBtnCont button#projectsBtn:hover, #siteLinkBtnCont button#projectsBtn:focus {
+#siteLinkBtnCont #projectsBtn:hover, #siteLinkBtnCont #projectsBtn:focus {
   color: var(--color0);
   box-shadow: inset 10em 0 0 0 var(--color5);
 }
-#siteLinkBtnCont button#aboutBtn {
-  margin-right: 2vmax;
-  background-color: transparent;
-  border-color: var(--color4);
-  color: var(--color4);
-}
-#siteLinkBtnCont button#aboutBtn:hover, #siteLinkBtnCont button#aboutBtn:focus {
-  color: var(--color0);
-  box-shadow: inset 10em 0 0 0 var(--color4);
-}
-#siteLinkBtnCont button#contactBtn {
+#siteLinkBtnCont #aboutBtn {
   margin-right: 2vmax;
   background-color: transparent;
   border-color: var(--color1);
   color: var(--color1);
 }
-#siteLinkBtnCont button#contactBtn:hover, #siteLinkBtnCont button#contactBtn:focus {
+#siteLinkBtnCont #aboutBtn:hover, #siteLinkBtnCont #aboutBtn:focus {
   color: var(--color0);
   box-shadow: inset 10em 0 0 0 var(--color1);
 }

@@ -19,6 +19,9 @@
 
 <body class="color0bg">
   <!--Top navigation bar-->
+  <div class="position-absolute" id="nav-toggle">
+    <h1 class="color3"></h1>
+  </div>
   <nav class="navbar fixed-top bg" id="cNav">
     <div class="container-fluid">
       <!--Left and always shown,contains logo-->
@@ -27,7 +30,7 @@
           <div class="brandLogo"></div>
         </button>
       </div>
-      <!--Center and not shown on mobile on default, contains links-->
+      <!--Navigation -> burger-->
       <div id="nav-section2" class="d-none d-md-block">
         <a href="./index.html" class="pagelink color7 color4h active">Home</a>
         <a href="./pages/projects.html" class="pagelink color7 color4h">Projects</a>
@@ -40,6 +43,11 @@
           <a href="https://github.com/ahujaankush" class="sociallink color7 color13h"></a>
           <a href="./index.html" class="sociallink color7 color12h">ﭮ</a>
         </div>
+          <button class="hamburger-control d-md-none" type="button" data-toggle="collapse" data-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </button>
       </div>
     </div>
   </nav>
@@ -85,15 +93,12 @@
     </div>
   </div>
   <div id="siteLinkBtnCont">
-    <button id="projectsBtn">
+    <a id="projectsBtn" href="/pages/projects.html">
       Projects
-    </button>
-    <button id="aboutBtn">
+    </a>
+    <a id="aboutBtn" href="/pages/about.html">
       About
-    </button>
-    <button id="contactBtn">
-      Contact
-    </button>
+    </a>
   </div>
   
   </main>
