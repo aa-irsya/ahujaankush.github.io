@@ -1,0 +1,27 @@
+#logo {
+	width: 1.5em;
+	height: 1.5em;
+	background: linear-gradient(45deg, #f7467b, #ff62a4, #ff8a30, #FFC457, #00ffb1, #1addb0, #2bfcfc, #2BCAFC, #53befc, #2798e4, #9554ff, #B467F9);
+	background-size: 400% 400%;
+    -webkit-mask: url(../../../image/logo.svg) center/contain;
+    mask-repeat: no-repeat;
+}
+#logo:hover {
+	animation: gradient 8s ease infinite;
+}
+#logoButton {
+    background: transparent;
+    border: transparent;
+    height: 4em;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

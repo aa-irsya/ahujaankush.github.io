@@ -1,0 +1,81 @@
+@import url(/src/style/min.css/theme.min.css);
+
+main {
+    width: 100vw;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;    
+}
+
+#progressCont {
+    height: inhert;
+    label {
+        display: block;
+        color: var(--color7);
+        font-family: CaskaydiaNFMono, "Courier New", Courier, monospace;
+        margin: 1vw 0 0.1vw 1vw;
+        font-size: 1.25vw;
+    }
+    progress {
+        border-radius: 0; 
+        width: 25vw;
+        height: 0.5em;
+        box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+        margin: 0.1vw 1vw;
+      }
+      progress::-webkit-progress-bar {
+        background-color: var(--color8);
+        border-radius: 0;
+      }
+
+      .green-progress::-webkit-progress-value {
+        background-image: linear-gradient(to right, var(--color2) , var(--color10));
+        border-radius: 0;
+      }
+
+      .blue-progress::-webkit-progress-value {
+        background-image: linear-gradient(to right, var(--color4) , var(--color14));
+        border-radius: 0;
+      }
+
+      .purple-progress::-webkit-progress-value {
+        background-image: linear-gradient(to right, var(--color5) , var(--color13));
+        border-radius: 0;
+      }
+
+      .yellow-progress::-webkit-progress-value {
+        background-image: linear-gradient(to right, var(--color3) , var(--color11));
+        border-radius: 0;
+      }
+
+      .red-progress::-webkit-progress-value {
+        background-image: linear-gradient(to right, var(--color1) , var(--color9));
+        border-radius: 0;
+      }
+      p {
+        line-height: 150%;
+        font-size: 1.25vw;
+        font-family: CodeNewRomanNFMono, "Courier New", Courier, monospace;
+        padding: 0.6vw 1vw;
+      }
+      ul {
+        font-family: DejaVuSansNFMono, "Courier New", Courier, monospace;
+        list-style-type: circle;
+        padding: 0.6vw 2.25vw;
+      }
+      li {
+        padding: 0.6vw 0.1vw;
+        font-size: 1.1vw;
+      }
+}
+#textCont {
+  padding: 4vw 3vw;
+  h1 {
+    font-size: 4vw;
+    font-family: CaskaydiaNFMono, "Courier New", Courier, monospace;
+  }
+  p {
+    font-size: 1.5vw;
+    font-family: GoMonoNFMono, "Courier New", Courier, monospace;
+  }
+}
