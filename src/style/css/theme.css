@@ -249,4 +249,76 @@
 
 .color15bg {
   background-color: var(--color15);
+}
+
+.bgbgh:hover {
+  background-color: var(--bg);
+}
+
+.fgbgh:hover {
+  background-color: var(--fg);
+}
+
+.color0bgh:hover {
+  background-color: var(--color0);
+}
+
+.color1bgh:hover {
+  background-color: var(--color1);
+}
+
+.color2bgh:hover {
+  background-color: var(--color2);
+}
+
+.color3bgh:hover {
+  background-color: var(--color3);
+}
+
+.color4bgh:hover {
+  background-color: var(--color4);
+}
+
+.color5bgh:hover {
+  background-color: var(--color5);
+}
+
+.color6bgh:hover {
+  background-color: var(--color6);
+}
+
+.color7bgh:hover {
+  background-color: var(--color7);
+}
+
+.color8bgh:hover {
+  background-color: var(--color8);
+}
+
+.color9bgh:hover {
+  background-color: var(--color9);
+}
+
+.color10bgh:hover {
+  background-color: var(--color10);
+}
+
+.color11bgh:hover {
+  background-color: var(--color11);
+}
+
+.color12bgh:hover {
+  background-color: var(--color12);
+}
+
+.color13bgh:hover {
+  background-color: var(--color13);
+}
+
+.color14bgh:hover {
+  background-color: var(--color14);
+}
+
+.color15bgh:hover {
+  background-color: var(--color15);
 }/*# sourceMappingURL=theme.css.map */

@@ -1,8 +1,93 @@
 @import url(/src/style/min.css/theme.min.css);
+#nav-toggle {
+  width: 100vw;
+ height: 100vh;
+ background-color: var(--bg);
+ z-index: 999;
+ font-family: HackNFMono, "Courier New", Courier, monospace;
+ transition: 1s;
+ position: absolute;
 
+ .animate-appear {
+  animation: fade 1.5s forwards;
+
+  @keyframes fade {
+    from {margin-left: -200vw}
+    to {margin-left: 0}
+  }
+ }
+
+ * {
+   transition: 0.25s;
+   text-decoration: none;
+ }
+ #toggle-close {
+  margin: 1vw;
+  content: "";
+  background: transparent;
+  border: none;
+  display: block;
+  position: absolute;
+  right: 0;
+
+  svg {
+    height: 5vmax;
+    width: 5vmax;
+    fill: var(--color1);
+
+    &:hover {
+      fill: var(--color9);
+    }
+  }
+ }
+ .toggle-entry {
+   margin: 7vmax;
+  * {
+    font-size: 3vmax;
+    display: block;
+    padding: 1vh 1vw;
+    text-align: center;
+    transition: 1s;
+  }
+  #home-entry {
+    color: var(--color4);
+    &:hover, &:active {
+      box-shadow: inset 100vw 0 0 0 var(--color4);
+      color: var(--color0);
+    }
+  }
+  #projects-entry {
+    color: var(--color5);
+    &:hover, &:active {
+      box-shadow: inset 100vw 0 0 0 var(--color5);
+      color: var(--color0);
+    }
+  }
+  #about-entry {
+    color: var(--color1);
+    &:hover, &:active {
+      box-shadow: inset 100vw 0 0 0 var(--color1);
+      color: var(--color0);
+    }
+  }
+ }
+ 
+ .toggle-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  * {
+
+    font-size: 3vmax;
+    display: inline-block;
+    padding: 2vw;
+  }
+}
+}
 #cNav {
   padding: 2vh;
   position: fixed;
+  z-index: 998;
 
   #nav-section1,
   #nav-section2,
@@ -19,6 +104,7 @@
 
   }
 
+  
   * {
     text-decoration: none;
     font-family: HackNFMono, "Courier New", Courier, monospace;

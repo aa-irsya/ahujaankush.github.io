@@ -1,7 +1,100 @@
 @import url(/src/style/min.css/theme.min.css);
+#nav-toggle {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
+  z-index: 999;
+  font-family: HackNFMono, "Courier New", Courier, monospace;
+  transition: 1s;
+  position: absolute;
+}
+#nav-toggle .animate-appear {
+  -webkit-animation: fade 1.5s forwards;
+          animation: fade 1.5s forwards;
+}
+@-webkit-keyframes fade {
+  from {
+    margin-left: -200vw;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+@keyframes fade {
+  from {
+    margin-left: -200vw;
+  }
+  to {
+    margin-left: 0;
+  }
+}
+#nav-toggle * {
+  transition: 0.25s;
+  text-decoration: none;
+}
+#nav-toggle #toggle-close {
+  margin: 1vw;
+  content: "";
+  background: transparent;
+  border: none;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+#nav-toggle #toggle-close svg {
+  height: 5vmax;
+  width: 5vmax;
+  fill: var(--color1);
+}
+#nav-toggle #toggle-close svg:hover {
+  fill: var(--color9);
+}
+#nav-toggle .toggle-entry {
+  margin: 7vmax;
+}
+#nav-toggle .toggle-entry * {
+  font-size: 3vmax;
+  display: block;
+  padding: 1vh 1vw;
+  text-align: center;
+  transition: 1s;
+}
+#nav-toggle .toggle-entry #home-entry {
+  color: var(--color4);
+}
+#nav-toggle .toggle-entry #home-entry:hover, #nav-toggle .toggle-entry #home-entry:active {
+  box-shadow: inset 100vw 0 0 0 var(--color4);
+  color: var(--color0);
+}
+#nav-toggle .toggle-entry #projects-entry {
+  color: var(--color5);
+}
+#nav-toggle .toggle-entry #projects-entry:hover, #nav-toggle .toggle-entry #projects-entry:active {
+  box-shadow: inset 100vw 0 0 0 var(--color5);
+  color: var(--color0);
+}
+#nav-toggle .toggle-entry #about-entry {
+  color: var(--color1);
+}
+#nav-toggle .toggle-entry #about-entry:hover, #nav-toggle .toggle-entry #about-entry:active {
+  box-shadow: inset 100vw 0 0 0 var(--color1);
+  color: var(--color0);
+}
+#nav-toggle .toggle-socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav-toggle .toggle-socials * {
+  font-size: 3vmax;
+  display: inline-block;
+  padding: 2vw;
+}
+
 #cNav {
   padding: 2vh;
   position: fixed;
+  z-index: 998;
 }
 #cNav #nav-section1,
 #cNav #nav-section2,

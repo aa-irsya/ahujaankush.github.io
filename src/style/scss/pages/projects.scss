@@ -26,43 +26,40 @@
         }
 
         .project-title-col {
-            height: 100vh;
             .content {
                 position: relative;
-                top: 20vh;
-                left: 5vw;
+                margin-top: 10vw;
+                margin-left: 5vw;
                 h2 {
-                    font-size: 5.5vw;
+                    font-size: 6vmax;
                     font-family: CaskaydiaNFMono, "Courier New", Courier, monospace;
                 }
                 p {
-                    font-size: 2.5vw;
+                    font-size: 2.5vmax;
                     font-family: GoMonoNFMono, "Courier New", Courier, monospace;
                 }
             }
         }
 
         .project-desc-col {
-            border-left: 1px var(--color7) solid;
-            height: 100vh;
             .content {
                 position: relative;
-                top: 2vh;
+                margin-top: 5vh;
                 text-align: justify;
                 font-family: GoMonoNFMono, "Courier New", Courier, monospace;
                 h2 {
-                    font-size: 5vw;
+                    font-size: 4vmax;
                     text-align: center;
                 }
                 p {
-                    font-size: 1.5vw;
-                    padding: 0.6vw 2vw;
+                    font-size: 2vmax;
+                    padding: 1vh 2vw;
                 }
                 i {
                     font-style: italic;                    
                 }
                 strong {
-                    font-size: 1.5vw;
+                    font-size: 2vmax;
                     padding: 0.6vw 2vw;
                     font-weight: bold;
                 }
@@ -72,7 +69,7 @@
                 }
                 li {
                     padding: 0.6vw 0vw;
-                    font-size: 1vw;
+                    font-size: 1.75vmax;
                 }
             }
         }

@@ -19,8 +19,23 @@
 
 <body class="color0bg">
   <!--Top navigation bar-->
-  <div class="position-absolute" id="nav-toggle">
-    <h1 class="color3"></h1>
+  <div class="animate-appear" id="nav-toggle" style="margin-left: -200vw">
+    <button id="toggle-close" onclick="navToggle()">
+      <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg>
+    </button>
+    <div class="toggle-entry">
+      <a href="/index.html" id="home-entry">Home</a>
+      <a href="/pages/projects.html" id="projects-entry">Projects</a>
+      <a href="/pages/about.html" id="about-entry">About</a>
+    </div>
+
+    <div class="toggle-socials">
+      <a href="/index.html" class="fg color10h"></a>
+      <a href="/pages/projects.html" class="fg color12h"></a>
+      <a href="https://github.com/ahujaankush" class="fg color13h">ﭮ</a>
+    </div>
   </div>
   <nav class="navbar fixed-top bg" id="cNav">
     <div class="container-fluid">
@@ -43,7 +58,7 @@
           <a href="https://github.com/ahujaankush" class="sociallink color7 color13h"></a>
           <a href="./index.html" class="sociallink color7 color12h">ﭮ</a>
         </div>
-          <button class="hamburger-control d-md-none" type="button" data-toggle="collapse" data-target="#nav-toggle" aria-controls="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="hamburger-control d-md-none" type="button" onclick="navToggle()">
             <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
@@ -55,7 +70,7 @@
 <main>
   <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="2000">
+      <div class="carousel-item active" data-bs-interval="5000">
         <div>
           <div class="slideshowText">
             <h2><span class="color13">Aetherized</span><br><span class="color12">VSCode</span></h2>
@@ -64,7 +79,7 @@
           <img src="/src/image/showcase_projects/AetherizedVSCode.png" class="slideshowIMG d-block" alt="Aetherized Theme for Visual Studio Code">
         </div>
       </div>
-      <div class="carousel-item" data-bs-interval="2000">
+      <div class="carousel-item" data-bs-interval="5000">
         <div class="slideshowText">
           <h2><span class="color13">Aetherized</span><br><span class="color1">Awesome</span></h2>
           <p class="color7">awesomewm setup based on<br><a href="https://github.com/elenapan/dotfiles" class="color7 color12h">elenapan's popular rice</a></p>
@@ -102,7 +117,8 @@
   </div>
   
   </main>
-  <script src="./src/logic/js/typewriter.js"></script>
+  <script src="/src/logic/js/navbar.js"></script>
+  <script src="/src/logic/js/typewriter.js"></script>
 </body>
 
 </html>
