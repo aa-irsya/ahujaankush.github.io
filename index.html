@@ -1,124 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap - CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap - JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./src/style/master.css" />
+    <link rel="stylesheet" href="./src/style/css/home.css" />
+    <title>Ankush Ahuja - Student/Developer</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Bootstrap - CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <!-- Bootstrap - JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./src/style/master.css" />
-  <link rel="stylesheet" href="/src/style/min.css/home.min.css">
-  <title>PyxoSite - Ankush Ahuja</title>
-</head>
+  <body class="bg">
+    <!-- Top navigation bar -->
+    <div id="nav-toggle" style="margin-left: -200vw">
+      <button id="toggle-close" onclick="navToggle()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="bi bi-x"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </button>
+      <div class="toggle-entry">
+        <a href="/index.html" id="home-entry">Home</a>
+        <a href="/pages/projects.html" id="projects-entry">Projects</a>
+        <a href="/pages/about.html" id="about-entry">About</a>
+      </div>
 
-<body class="color0bg">
-  <!--Top navigation bar-->
-  <div id="nav-toggle" style="margin-left: -200vw">
-    <button id="toggle-close" onclick="navToggle()">
-      <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x" viewBox="0 0 16 16">
-        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-      </svg>
-    </button>
-    <div class="toggle-entry">
-      <a href="/index.html" id="home-entry">Home</a>
-      <a href="/pages/projects.html" id="projects-entry">Projects</a>
-      <a href="/pages/about.html" id="about-entry">About</a>
+      <div class="toggle-socials">
+        <a href="/index.html" class="fg color10h"></a>
+        <a href="/pages/projects.html" class="fg color12h"></a>
+        <a href="https://github.com/ahujaankush" class="fg color13h">ﭮ</a>
+      </div>
     </div>
 
-    <div class="toggle-socials">
-      <a href="/index.html" class="fg color10h"></a>
-      <a href="/pages/projects.html" class="fg color12h"></a>
-      <a href="https://github.com/ahujaankush" class="fg color13h">ﭮ</a>
-    </div>
-  </div>
-  <nav class="navbar fixed-top bg" id="cNav">
-    <div class="container-fluid">
-      <!--Left and always shown,contains logo-->
-      <div id="nav-section1">
-        <button class="brandBtn">
-          <div class="brandLogo"></div>
-        </button>
-      </div>
-      <!--Navigation -> burger-->
-      <div id="nav-section2" class="d-none d-md-block">
-        <a href="./index.html" class="pagelink color7 color4h active">Home</a>
-        <a href="./pages/projects.html" class="pagelink color7 color4h">Projects</a>
-        <a href="./pages/about.html" class="pagelink color7 color4h">About</a>
-      </div>
-      <!--Right and not shown on mobile on default, contains links to socials-->
-      <div id="nav-section3">
-        <div class="d-none d-md-block">
-          <a href="./index.html" class="sociallink color7 color10h"></a>
-          <a href="https://github.com/ahujaankush" class="sociallink color7 color13h"></a>
-          <a href="./index.html" class="sociallink color7 color12h">ﭮ</a>
+    <nav class="navbar fixed-top" id="cNav">
+      <div class="container-fluid">
+        <!--Left and always shown,contains logo-->
+        <div id="nav-section1">
+          <button class="brandBtn">
+            <div class="brandLogo"></div>
+          </button>
         </div>
-          <button class="hamburger-control d-md-none" type="button" onclick="navToggle()">
-            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        <!--Navigation -> burger-->
+        <div id="nav-section2" class="d-none d-md-block">
+          <a href="./index.html" class="pagelink color7 color5h">Home</a>
+          <a href="./pages/projects.html" class="pagelink color7 color5h"
+            >Projects</a
+          >
+          <a href="./pages/about.html" class="pagelink color7 color5h">About</a>
+        </div>
+        <!--Right and not shown on mobile on default, contains links to socials-->
+        <div id="nav-section3">
+          <div class="d-none d-md-block">
+            <a href="https://www.instagram.com/ahujaankush_/" class="sociallink color7 color10h"></a>
+            <a
+              href="https://github.com/ahujaankush"
+              class="sociallink color7 color13h"
+              ></a
+            >
+            <a href="./index.html" class="sociallink color7 color12h"></a>
+          </div>
+          <button
+            class="hamburger-control d-md-none"
+            type="button"
+            onclick="navToggle()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
             </svg>
           </button>
+        </div>
       </div>
-    </div>
-  </nav>
-
-<main>
-  <div id="slideshow" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="5000">
-        <div>
-          <div class="slideshowText">
-            <h2><span class="color13">Aetherized</span><br><span class="color12">VSCode</span></h2>
-            <p class="color7">modern high contrast theme</p>
+    </nav>
+    <main>
+      <!-- Logo -->
+      <div id="logo-bg"></div>
+      <!-- subheading -->
+      <div id="tw-parent">
+        <div class="typeWriterCont">
+          <div class="d-flex justify-content-center">
+            <div
+              id="typeWriterDiv1"
+              class="typeWriterGreetings"
+              style="font-weight: bold"
+            ></div>
+            <span class="typeWriterGreetingsIndicator">.</span>
           </div>
-          <img src="/src/image/showcase_projects/AetherizedVSCode.png" class="slideshowIMG d-block" alt="Aetherized Theme for Visual Studio Code">
+          <br />
+          <div
+            id="typeWriterDiv2"
+            class="typeWriterComments d-flex justify-content-center"
+            style="font-weight: 400"
+          ></div>
+        </div>
+        <!-- Buttons -->
+        <div id="siteLinkBtnCont" class="d-flex justify-content-center">
+          <a id="projectsBtn" href="/pages/projects.html"> Projects </a>
+          <a id="aboutBtn" href="/pages/about.html"> About Me </a>
         </div>
       </div>
-      <div class="carousel-item" data-bs-interval="5000">
-        <div class="slideshowText">
-          <h2><span class="color13">Aetherized</span><br><span class="color1">Awesome</span></h2>
-          <p class="color7">awesomewm setup based on<br><a href="https://github.com/elenapan/dotfiles" class="color7 color12h">elenapan's popular rice</a></p>
-        </div>
-        <img src="/src/image/showcase_projects/AetherizedAwesome.png" class="d-block slideshowIMG" alt="Aetherized Awesome">
-      </div>
-      <button class="carousel-control-prev slideshow-control-container slideshow-control-container-left" type="button"
-        data-bs-target="#slideshow" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="slideshow-control-text visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next slideshow-control-container slideshow-control-container-right" type="button"
-        data-bs-target="#slideshow" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="slideshow-control-text visually-hidden">Next</span>
-      </button>
-    </div>
-  </div>
-  <hr>
-  <div class="typeWriterCont">
-    <div id="typeWriterDiv1" class="typeWriterGreetings">
-    </div>
-    <span class="typeWriterGreetingsIndicator">.</span>
-    <br>
-    <div id="typeWriterDiv2" class="typeWriterComments">
-    </div>
-  </div>
-  <div id="siteLinkBtnCont">
-    <a id="projectsBtn" href="/pages/projects.html">
-      Projects
-    </a>
-    <a id="aboutBtn" href="/pages/about.html">
-      About
-    </a>
-  </div>
-  
-  </main>
-  <script src="/src/logic/js/navbar.js"></script>
-  <script src="/src/logic/js/typewriter.js"></script>
-</body>
-
+    </main>
+    <script src="/src/logic/js/navbar.js"></script>
+    <script src="/src/logic/js/typewriter.js"></script>
+  </body>
 </html>

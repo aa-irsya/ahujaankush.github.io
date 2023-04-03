@@ -1,4 +1,4 @@
-@import url(/src/style/min.css/theme.min.css);
+@import url(/src/style/css/theme.css);
 #nav-toggle {
   width: 100vw;
   height: 100vh;
@@ -121,31 +121,18 @@
   -webkit-mask-repeat: no-repeat;
   height: 4vh;
   width: 4vh;
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  animation: gradient 15s ease infinite;
 }
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
     background-position: 100% 50%;
   }
-  100% {
+  50% {
     background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
 .hamburger-control {
@@ -156,4 +143,6 @@
   fill: var(--color7);
   height: 4vh;
   width: 4vh;
-}/*# sourceMappingURL=navbar.css.map */
+}
+
+/*# sourceMappingURL=navbar.css.map */

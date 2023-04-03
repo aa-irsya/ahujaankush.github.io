@@ -1,4 +1,4 @@
-@import url(/src/style/min.css/theme.min.css);
+@import url(/src/style/css/theme.css);
 #nav-toggle {
   width: 100vw;
  height: 100vh;
@@ -153,13 +153,13 @@
 
 @keyframes gradient {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
     background-position: 100% 50%;
   }
-  100% {
+  50% {
     background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
 
