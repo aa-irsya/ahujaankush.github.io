@@ -1,80 +1,82 @@
 @import url(/src/style/css/theme.css);
 #nav-toggle {
   width: 100vw;
- height: 100vh;
- background-color: var(--bg);
- z-index: 999;
- font-family: HackNFMono, "Courier New", Courier, monospace;
- transition: 1s;
- position: absolute;
- display: block;
-
- * {
-   transition: 0.25s;
-   text-decoration: none;
- }
- #toggle-close {
-  margin: 1vw;
-  content: "";
-  background: transparent;
-  border: none;
-  display: block;
+  height: 100vh;
+  background-color: var(--bg);
+  z-index: 999;
+  font-family: HackNFMono, "Courier New", Courier, monospace;
+  transition: 1s;
   position: absolute;
-  right: 0;
+  display: block;
 
-  svg {
-    height: 5vmax;
-    width: 5vmax;
-    fill: var(--color1);
-
-    &:hover {
-      fill: var(--color9);
-    }
-  }
- }
- .toggle-entry {
-   margin: 7vmax;
   * {
-    font-size: 3vmax;
+    transition: 0.25s;
+    text-decoration: none;
+  }
+  #toggle-close {
+    margin: 1vw;
+    content: "";
+    background: transparent;
+    border: none;
     display: block;
-    padding: 1vh 1vw;
-    text-align: center;
-    transition: 1s;
-  }
-  #home-entry {
-    color: var(--color4);
-    &:hover, &:active {
-      box-shadow: inset 100vw 0 0 0 var(--color4);
-      color: var(--color0);
-    }
-  }
-  #projects-entry {
-    color: var(--color5);
-    &:hover, &:active {
-      box-shadow: inset 100vw 0 0 0 var(--color5);
-      color: var(--color0);
-    }
-  }
-  #about-entry {
-    color: var(--color1);
-    &:hover, &:active {
-      box-shadow: inset 100vw 0 0 0 var(--color1);
-      color: var(--color0);
-    }
-  }
- }
- 
- .toggle-socials {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  * {
+    position: absolute;
+    right: 0;
 
-    font-size: 3vmax;
-    display: inline-block;
-    padding: 2vw;
+    svg {
+      height: 5vmax;
+      width: 5vmax;
+      fill: var(--color1);
+
+      &:hover {
+        fill: var(--color9);
+      }
+    }
   }
-}
+  .toggle-entry {
+    margin: 7vmax;
+    * {
+      font-size: 3vmax;
+      display: block;
+      padding: 1vh 1vw;
+      text-align: center;
+      transition: 1s;
+    }
+    #home-entry {
+      color: var(--color4);
+      &:hover,
+      &:active {
+        box-shadow: inset 100vw 0 0 0 var(--color4);
+        color: var(--color0);
+      }
+    }
+    #projects-entry {
+      color: var(--color5);
+      &:hover,
+      &:active {
+        box-shadow: inset 100vw 0 0 0 var(--color5);
+        color: var(--color0);
+      }
+    }
+    #about-entry {
+      color: var(--color1);
+      &:hover,
+      &:active {
+        box-shadow: inset 100vw 0 0 0 var(--color1);
+        color: var(--color0);
+      }
+    }
+  }
+
+  .toggle-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    * {
+      font-size: 3vmax;
+      display: inline-block;
+      padding: 2vw;
+    }
+  }
 }
 #cNav {
   padding: 2vh;
@@ -93,10 +95,8 @@
   #nav-section3 * {
     margin: 0 0.65vh;
     transition: 0.25s;
-
   }
 
-  
   * {
     text-decoration: none;
     font-family: HackNFMono, "Courier New", Courier, monospace;
@@ -111,14 +111,12 @@
   }
 
   .pagelink.active {
-    color: var(--color7);
-    background-color: var(--color4);
+    color: var(--color4);
     border-radius: 15vh;
     padding: 0.75vh 1.5vh;
+    text-decoration: underline;
+    text-decoration-line: underline;
   }
-  .pagelink.active:hover {
-    color: var(--fg) !important;
-}
 
   .brandBtn {
     height: 4vh;

@@ -1,145 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap - CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap - JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/src/style/master.css" />
+    <link rel="stylesheet" href="/src/style/css/about.css" />
+    <title>PyxoSite - Ankush Ahuja</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Bootstrap - CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <!-- Bootstrap - JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="/src/style/master.css" />
-  <link rel="stylesheet" href="/src/style/min.css/about.min.css">
-  <title>PyxoSite - Ankush Ahuja</title>
-</head>
+  <body class="color0bg">
+    <!-- Top navigation bar -->
+    <div id="nav-toggle" style="margin-left: -200vw">
+      <button id="toggle-close" onclick="navToggle()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="bi bi-x"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </button>
+      <div class="toggle-entry">
+        <a href="/index.html" id="home-entry">Home</a>
+        <a href="/pages/projects.html" id="projects-entry">Projects</a>
+        <a href="/pages/about.html" id="about-entry">About</a>
+      </div>
 
-<body class="color0bg">
-  <!--Top navigation bar-->
-  <div id="nav-toggle" style="margin-left: -200vw">
-    <button id="toggle-close" onclick="navToggle()">
-      <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-x" viewBox="0 0 16 16">
-        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-      </svg>
-    </button>
-    <div class="toggle-entry">
-      <a href="/index.html" id="home-entry">Home</a>
-      <a href="/pages/projects.html" id="projects-entry">Projects</a>
-      <a href="/pages/about.html" id="about-entry">About</a>
+      <div class="toggle-socials">
+        <a
+          href="https://www.instagram.com/ahujaankush_/"
+          class="sociallink color7 color10h"
+          ></a
+        >
+        <a
+          href="https://github.com/ahujaankush"
+          class="sociallink color7 color13h"
+          ></a
+        >
+        <a
+          href="https://linkedin.com/in/ankush-ahuja-844b85257"
+          class="sociallink color7 color12h"
+          ></a
+        >
+      </div>
     </div>
 
-    <div class="toggle-socials">
-      <a href="/index.html" class="fg color10h"></a>
-      <a href="/pages/projects.html" class="fg color12h"></a>
-      <a href="https://github.com/ahujaankush" class="fg color13h">ﭮ</a>
-    </div>
-  </div>
-  <nav class="navbar fixed-top bg" id="cNav">
-    <div class="container-fluid">
-      <!--Left and always shown,contains logo-->
-      <div id="nav-section1">
-        <button class="brandBtn">
-          <div class="brandLogo"></div>
-        </button>
-      </div>
-      <!--Navigation -> burger-->
-      <div id="nav-section2" class="d-none d-md-block">
-        <a href="/index.html" class="pagelink color7 color4h">Home</a>
-        <a href="/pages/projects.html" class="pagelink color7 color4h">Projects</a>
-        <a href="/pages/about.html" class="pagelink color7 color4h active">About</a>
-      </div>
-      <!--Right and not shown on mobile on default, contains links to socials-->
-      <div id="nav-section3">
-        <div class="d-none d-md-block">
-          <a href="./index.html" class="sociallink color7 color10h"></a>
-          <a href="https://github.com/ahujaankush" class="sociallink color7 color13h"></a>
-          <a href="./index.html" class="sociallink color7 color12h">ﭮ</a>
+    <nav class="navbar fixed-top" id="cNav">
+      <div class="container-fluid">
+        <!--Left and always shown,contains logo-->
+        <div id="nav-section1">
+          <button class="brandBtn">
+            <div class="brandLogo"></div>
+          </button>
         </div>
-          <button class="hamburger-control d-md-none" type="button" onclick="navToggle()">
-            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        <!--Navigation -> burger-->
+        <div id="nav-section2" class="d-none d-md-block">
+          <a href="../index.html" class="pagelink color7 color5h">Home</a>
+          <a href="projects.html" class="pagelink color7 color5h"
+            >Projects</a
+          >
+          <a href="about.html" class="pagelink color7 color5h active">About</a>
+        </div>
+        <!--Right and not shown on mobile on default, contains links to socials-->
+        <div id="nav-section3">
+          <div class="d-none d-md-block">
+            <a
+              href="https://www.instagram.com/ahujaankush_/"
+              class="sociallink color7 color10h"
+              ></a
+            >
+            <a
+              href="https://github.com/ahujaankush"
+              class="sociallink color7 color13h"
+              ></a
+            >
+            <a
+              href="https://linkedin.com/in/ankush-ahuja-844b85257"
+              class="sociallink color7 color12h"
+              ></a
+            >
+          </div>
+          <button
+            class="hamburger-control d-md-none"
+            type="button"
+            onclick="navToggle()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
             </svg>
           </button>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <main id="page">
-    <div class="container-fluid row">
-      <div class="col" id="textCont">
-        <h1><span class="color13">About </span><span class="color14">me</span></h1>
-        <p class="color7"></p>
+    <main id="page">
+      <div class="container-fluid row">
+        <div class="col" id="textCont">
+          <h1>
+            <span class="color13">About </span><span class="color14">me</span>
+          </h1>
+          <p class="color7"></p>
+        </div>
+        <div class="col-4" id="progressCont">
+          <div id="javaCont">
+            <label for="java">Java</label>
+            <div class="progress">
+              <div id="java" class="blue-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div id="csharpCont">
+            <label for="csharp">CSharp</label>
+            <div class="progress">
+              <div id="csharp" class="blue-progress" style="width: 75%"></div>
+            </div>
+          </div>
+          <div id="c-cppCont">
+            <label for="c-cpp">C/CPP</label>
+            <div class="progress">
+              <div id="c-cpp" class="blue-progress" style="width: 50%"></div>
+            </div>
+          </div>
+          <div id="pythonCont">
+            <label for="python">Python</label>
+            <div class="progress">
+              <div id="python" class="green-progress" style="width: 70%"></div>
+            </div>
+          </div>
+          <div class="luaCont">
+            <label for="lua">Lua</label>
+            <div class="progress">
+              <div id="lua" class="green-progress" style="width: 50%"></div>
+            </div>
+          </div>
+          <div id="html-cssCont">
+            <label for="html-css">HTML/CSS</label>
+            <div class="progress">
+              <div
+                id="html-css"
+                class="yellow-progress"
+                style="width: 80%"
+              ></div>
+            </div>
+          </div>
+          <div id="js-tsCont">
+            <label for="js-ts">JavaScript/TypeScript</label>
+            <div class="progress">
+              <div id="js-ts" class="yellow-progress" style="width: 60%"></div>
+            </div>
+          </div>
+          <div id="linuxCont">
+            <label for="linux">Debian/RPM/Arch Based Linux</label>
+            <div class="progress">
+              <div id="linux" class="purple-progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div id="adobeCont">
+            <label for="adobe">Adobe Photoshop/Illustrator</label>
+            <div class="progress">
+              <div id="adobe" class="red-progress" style="width: 33%"></div>
+            </div>
+          </div>
+          <p class="color7">
+            These values are a self-estimation. <br />Relevant for this
+            estimation were:
+          </p>
+          <ul class="color7">
+            <li>How often do I use the language?</li>
+            <li>How complex are the projects?</li>
+          </ul>
+        </div>
       </div>
-      <div class="col-4" id="progressCont">
-        <div id="javaCont">
-          <label for="java">Java</label>
-          <div class="progress">
-            <div id="java" class="blue-progress" style="width: 85%"></div>
-          </div>
-        </div>
-        <div id="csharpCont">
-          <label for="csharp">CSharp</label>
-          <div class="progress">
-            <div id="csharp" class="blue-progress" style="width: 75%"></div>
-          </div>
-        </div>
-        <div id="c-cppCont">
-          <label for="c-cpp">C/CPP</label>
-          <div class="progress">
-            <div id="c-cpp" class="blue-progress" style="width: 50%"></div>
-          </div>
-        </div>
-        <div id="pythonCont">
-          <label for="python">Python</label>
-          <div class="progress">
-            <div id="python" class="green-progress" style="width: 70%"></div>
-          </div>
-        </div>
-        <div class="luaCont">
-          <label for="lua">Lua</label>
-          <div class="progress">
-            <div id="lua" class="green-progress" style="width: 50%"></div>
-          </div>
-        </div>
-        <div id="html-cssCont">
-          <label for="html-css">HTML/CSS</label>
-          <div class="progress">
-            <div id="html-css" class="yellow-progress" style="width: 80%"></div>
-          </div>
-        </div>
-        <div id="js-tsCont">
-          <label for="js-ts">JavaScript/TypeScript</label>
-          <div class="progress">
-            <div id="js-ts" class="yellow-progress" style="width: 60%"></div>
-          </div>
-        </div>
-        <div id="linuxCont">
-          <label for="linux">Debian/RPM/Arch Based Linux</label>
-          <div class="progress">
-            <div id="linux" class="purple-progress" style="width: 85%"></div>
-          </div>
-        </div>
-        <div id="adobeCont">
-          <label for="adobe">Adobe Photoshop/Illustrator</label>
-          <div class="progress">
-            <div id="adobe" class="red-progress" style="width: 33%"></div>
-          </div>
-        </div>
-        <p class="color7">These values are a self-estimation.
-          <br>Relevant for this estimation were:
-        </p>
-        <ul class="color7">
-          <li>How often do I use the language?</li>
-          <li>How complex are the projects?</li>
-        </ul>
-      </div>
-    </div>
-  </main>
-  <script src="/src/logic/js/navbar.js"></script>
-  <script src="/src/logic/js/about_page.js"></script>
-</body>
-
+    </main>
+    <script src="/src/logic/js/navbar.js"></script>
+    <script src="/src/logic/js/about_page.js"></script>
+  </body>
 </html>

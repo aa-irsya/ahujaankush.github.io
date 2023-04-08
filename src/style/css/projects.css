@@ -1,7 +1,6 @@
 @import url(/src/style/css/theme.css);
 #projects-page-main-div {
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
   margin: 0;
   padding: 0;
 }
@@ -87,4 +86,6 @@
   height: 100%;
   filter: blur(10px);
   background: url(/src/image/showcase_projects/AetherizedAwesome.png) no-repeat top center fixed;
-}/*# sourceMappingURL=projects.css.map */
+}
+
+/*# sourceMappingURL=projects.css.map */

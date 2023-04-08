@@ -90,7 +90,7 @@
   position: absolute;
   width: 100%;
   margin-top: 30vh;
-  z-index: 999;
+  z-index: 900;
 }
 
 .typeWriterCont {
@@ -140,7 +140,7 @@
   a {
     margin-right: 2vmax;
     box-sizing: border-box;
-    background-color: transparent;
+    background-color: rgba(20, 20, 20, 0.25);
     padding: 1.25vmax 2.75vmax;
     border-radius: 0px;
     font-size: 1.25vmax;
@@ -154,7 +154,6 @@
 
   #projectsBtn {
     margin-right: 2vmax;
-    background-color: transparent;
     border-color: var(--color5);
     color: var(--color5);
 
@@ -167,7 +166,6 @@
 
   #aboutBtn {
     margin-right: 2vmax;
-    background-color: transparent;
     border-color: var(--color1);
     color: var(--color1);
 

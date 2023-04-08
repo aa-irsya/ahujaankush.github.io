@@ -113,7 +113,7 @@
 #siteLinkBtnCont a {
   margin-right: 2vmax;
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: rgba(20, 20, 20, 0.25);
   padding: 1.25vmax 2.75vmax;
   border-radius: 0px;
   font-size: 1.25vmax;
@@ -126,7 +126,6 @@
 }
 #siteLinkBtnCont #projectsBtn {
   margin-right: 2vmax;
-  background-color: transparent;
   border-color: var(--color5);
   color: var(--color5);
 }
@@ -136,7 +135,6 @@
 }
 #siteLinkBtnCont #aboutBtn {
   margin-right: 2vmax;
-  background-color: transparent;
   border-color: var(--color1);
   color: var(--color1);
 }
