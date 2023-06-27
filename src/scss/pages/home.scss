@@ -5,6 +5,10 @@
 }
 
 #home-intro {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)),
+    url("https://images.unsplash.com/photo-1491956175078-460aea0914ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1550&q=80")
+      center center;
+  background-size: cover;
   #home-intro-title {
     font-size: 5em;
     font-family: "Josefin Sans", sans-serif;
