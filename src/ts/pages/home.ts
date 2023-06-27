@@ -101,3 +101,5 @@ particlesJS("particles", {
   },
   retina_detect: true,
 });
+
+new Typewriter("home-intro-undertitle", 140)
