@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+#particles {
+  height: 100vh;
+  width: 100vw;
+}
+
+#home-intro {
+  #home-intro-title {
+    font-size: 5em;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  #home-intro-undertitle {
+    font-size: 2em;
+    margin-top: 1.5em;
+    font-family: "Josefin Sans", sans-serif;
+    content: " ";
+  }
+
+  #home-intro-icons {
+    margin-top: 5em;
+    i {
+      font-size: 2em;
+      padding: 1.3em;
+    }
+  }
+}
