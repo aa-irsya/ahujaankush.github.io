@@ -1,17 +1,37 @@
-/* Error: Undefined variable.
- *   ,
- * 4 |   background-color: rgba($black, 0.25);
- *   |                          ^^^^^^
- *   '
- *   src/scss/components/navbar.scss 4:26  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 4 \2502    background-color: rgba($black, 0.25);\a   \2502                           ^^^^^^\a   \2575 \a   src/scss/components/navbar.scss 4:26  root stylesheet";
+#nav {
+  backdrop-filter: blur(10px);
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgba(14, 17, 21, 0.25);
 }
+#nav #brandLogo {
+  background: linear-gradient(-45deg, #f7467b, #ff75a0, #9554ff, #b467f9, #2bfcfc, #2798e4, #1addb0, #00ffb1, #ffc457, #ff8a30);
+  background-size: 400% 400%;
+  -webkit-mask: url(/src/image/logo.svg) left/contain;
+  mask: url(/src/img/logo.svg) left/contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  height: 1.5em;
+  width: 10vw;
+  animation: gradient 15s ease infinite;
+}
+#nav * #nav-icons {
+  width: 10vw;
+}
+#nav * #nav-icons i {
+  padding: 0.15em;
+  font-size: 1.5em;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */
