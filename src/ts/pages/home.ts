@@ -102,4 +102,5 @@ particlesJS("particles", {
   retina_detect: true,
 });
 
-new Typewriter("home-intro-undertitle", 140)
+let home_ts = new Typewriter("home-intro-undertitle", 120, 90, 500, 250);
+home_ts.execute();

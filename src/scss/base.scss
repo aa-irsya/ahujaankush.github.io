@@ -1,5 +1,14 @@
 @import "theme";
 
+* {
+  transition: 0.125s;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 // body
 body {
   background-color: $darker-black;

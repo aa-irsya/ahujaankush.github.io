@@ -1,4 +1,6 @@
+@import "../theme";
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
 #particles {
   height: 100vh;
   width: 100vw;
@@ -12,12 +14,61 @@
   #home-intro-title {
     font-size: 5em;
     font-family: "Josefin Sans", sans-serif;
+    background: -webkit-linear-gradient(
+      -45deg,
+      lighten($red, 10%),
+      lighten($pink, 10%),
+      lighten($dark_purple, 10%),
+      lighten($purple, 10%),
+      lighten($cyan, 10%),
+      lighten($blue, 10%),
+      lighten($vibrant_green, 10%),
+      lighten($green, 10%),
+      lighten($yellow, 10%),
+      lighten($orange, 10%)
+    );
+    background-size: 250% 250%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    animation: gradient 8s ease infinite;
   }
 
   #home-intro-undertitle {
     font-size: 2em;
     margin-top: 1.5em;
     font-family: "Josefin Sans", sans-serif;
+    span {
+      &#student {
+        background: -webkit-linear-gradient(-45deg, $green, $blue);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &#competitiveprog {
+        background: -webkit-linear-gradient(-45deg, $cyan, $dark_purple);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &#softwaredev {
+        background: -webkit-linear-gradient(-45deg, $purple, $red);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &#datascience {
+        background: -webkit-linear-gradient(-45deg, $baby_pink, $orange);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
   }
   #home-intro-undertitle:after {
     content: "\200b";
@@ -29,5 +80,17 @@
       font-size: 2em;
       padding: 1.3em;
     }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
   }
 }
