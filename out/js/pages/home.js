@@ -48,7 +48,7 @@ particlesJS("particles", {
         },
         move: {
             enable: true,
-            speed: 1,
+            speed: 1.25,
             direction: "none",
             random: true,
             straight: false,
@@ -56,8 +56,8 @@ particlesJS("particles", {
             bounce: true,
             attract: {
                 enable: true,
-                rotateX: 600,
-                rotateY: 600,
+                rotateX: 1000,
+                rotateY: 1000,
             },
         },
     },
@@ -65,7 +65,7 @@ particlesJS("particles", {
         detect_on: "canvas",
         events: {
             onhover: {
-                enable: false,
+                enable: true,
                 mode: "bubble",
             },
             onclick: {
@@ -82,15 +82,15 @@ particlesJS("particles", {
                 },
             },
             bubble: {
-                distance: 250,
-                size: 0,
-                duration: 2,
-                opacity: 0,
-                speed: 3,
+                distance: 50,
+                size: 5,
+                duration: 1,
+                opacity: 0.5,
+                speed: 1,
             },
             repulse: {
                 distance: 400,
-                duration: 0.4,
+                duration: 0.3,
             },
             push: {
                 particles_nb: 4,
