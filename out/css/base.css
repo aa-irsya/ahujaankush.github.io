@@ -1,211 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 .white-bg {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 
 .darker_black-bg {
-  background-color: #0a0d11;
+  background-color: #0a0d11 !important;
 }
 
 .black-bg {
-  background-color: #0e1115;
+  background-color: #0e1115 !important;
 }
 
 .black2-bg {
-  background-color: #171c21;
+  background-color: #171c21 !important;
 }
 
 .one_bg-bg {
-  background-color: #212428;
+  background-color: #212428 !important;
 }
 
 .one_bg2-bg {
-  background-color: #2d3139;
+  background-color: #2d3139 !important;
 }
 
 .one_bg3-bg {
-  background-color: #33363a;
+  background-color: #33363a !important;
 }
 
 .grey-bg {
-  background-color: #3e4145;
+  background-color: #3e4145 !important;
 }
 
 .grey_fg-bg {
-  background-color: #45484c;
+  background-color: #45484c !important;
 }
 
 .grey_fg2-bg {
-  background-color: #4a4d51;
+  background-color: #4a4d51 !important;
 }
 
 .light_grey-bg {
-  background-color: #525559;
+  background-color: #525559 !important;
 }
 
 .red-bg {
-  background-color: #f7467b;
+  background-color: #f7467b !important;
 }
 
 .baby_pink-bg {
-  background-color: #ff62a4;
+  background-color: #ff62a4 !important;
 }
 
 .pink-bg {
-  background-color: #ff75a0;
+  background-color: #ff75a0 !important;
 }
 
 .line-bg {
-  background-color: #31353d;
+  background-color: #31353d !important;
 }
 
 .green-bg {
-  background-color: #00ffb1;
+  background-color: #00ffb1 !important;
 }
 
 .vibrant_green-bg {
-  background-color: #1addb0;
+  background-color: #1addb0 !important;
 }
 
 .nord_blue-bg {
-  background-color: #53befc;
+  background-color: #53befc !important;
 }
 
 .blue-bg {
-  background-color: #2798e4;
+  background-color: #2798e4 !important;
 }
 
 .yellow-bg {
-  background-color: #ffc457;
+  background-color: #ffc457 !important;
 }
 
 .sun-bg {
-  background-color: #ffa246;
+  background-color: #ffa246 !important;
 }
 
 .purple-bg {
-  background-color: #b467f9;
+  background-color: #b467f9 !important;
 }
 
 .dark_purple-bg {
-  background-color: #9554ff;
+  background-color: #9554ff !important;
 }
 
 .teal-bg {
-  background-color: #2bcafc;
+  background-color: #2bcafc !important;
 }
 
 .orange-bg {
-  background-color: #ff8a30;
+  background-color: #ff8a30 !important;
 }
 
 .cyan-bg {
-  background-color: #2bfcfc;
+  background-color: #2bfcfc !important;
 }
 
 .white-fg {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .darker_black-fg {
-  color: #0a0d11;
+  color: #0a0d11 !important;
 }
 
 .black-fg {
-  color: #0e1115;
+  color: #0e1115 !important;
 }
 
 .black2-fg {
-  color: #171c21;
+  color: #171c21 !important;
 }
 
 .one_bg-fg {
-  color: #212428;
+  color: #212428 !important;
 }
 
 .one_bg2-fg {
-  color: #2d3139;
+  color: #2d3139 !important;
 }
 
 .one_bg3-fg {
-  color: #33363a;
+  color: #33363a !important;
 }
 
 .grey-fg {
-  color: #3e4145;
+  color: #3e4145 !important;
 }
 
 .grey_fg-fg {
-  color: #45484c;
+  color: #45484c !important;
 }
 
 .grey_fg2-fg {
-  color: #4a4d51;
+  color: #4a4d51 !important;
 }
 
 .light_grey-fg {
-  color: #525559;
+  color: #525559 !important;
 }
 
 .red-fg {
-  color: #f7467b;
+  color: #f7467b !important;
 }
 
 .baby_pink-fg {
-  color: #ff62a4;
+  color: #ff62a4 !important;
 }
 
 .pink-fg {
-  color: #ff75a0;
+  color: #ff75a0 !important;
 }
 
 .line-fg {
-  color: #31353d;
+  color: #31353d !important;
 }
 
 .green-fg {
-  color: #00ffb1;
+  color: #00ffb1 !important;
 }
 
 .vibrant_green-fg {
-  color: #1addb0;
+  color: #1addb0 !important;
 }
 
 .nord_blue-fg {
-  color: #53befc;
+  color: #53befc !important;
 }
 
 .blue-fg {
-  color: #2798e4;
+  color: #2798e4 !important;
 }
 
 .yellow-fg {
-  color: #ffc457;
+  color: #ffc457 !important;
 }
 
 .sun-fg {
-  color: #ffa246;
+  color: #ffa246 !important;
 }
 
 .purple-fg {
-  color: #b467f9;
+  color: #b467f9 !important;
 }
 
 .dark_purple-fg {
-  color: #9554ff;
+  color: #9554ff !important;
 }
 
 .teal-fg {
-  color: #2bcafc;
+  color: #2bcafc !important;
 }
 
 .orange-fg {
-  color: #ff8a30;
+  color: #ff8a30 !important;
 }
 
 .cyan-fg {
-  color: #2bfcfc;
+  color: #2bfcfc !important;
 }
 
+#nav {
+  backdrop-filter: blur(10px);
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgba(14, 17, 21, 0.25);
+}
+#nav #brandLogo {
+  background: linear-gradient(-45deg, #f7467b, #ff75a0, #9554ff, #b467f9, #2bfcfc, #2798e4, #1addb0, #00ffb1, #ffc457, #ff8a30);
+  background-size: 400% 400%;
+  -webkit-mask: url(/src/image/logo.svg) left/contain;
+  mask: url(/src/img/logo.svg) left/contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  height: 1.5em;
+  width: 10vw;
+  animation: gradient 15s ease infinite;
+}
+#nav * #nav-icons {
+  width: 10vw;
+}
+#nav * #nav-icons i {
+  padding: 0.15em;
+  font-size: 1.5em;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
 * {
   transition: 0.125s;
 }

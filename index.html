@@ -10,33 +10,96 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+
     <link href="./out/css/pages/home.css" rel="stylesheet" />
     <link href="./out/css/base.css" rel="stylesheet" />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" id="brandLogo" href="./index.html"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav pl-md-5 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-end" id="nav-icons">
+            <i class="ph ph-github-logo"></i>
+            <i class="ph ph-linkedin-logo"></i>
+            <i class="ph ph-envelope"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <section class="full" id="home-intro">
-    <div id="particles"></div> 
-       <div
-         class="position-absolute top-50 start-50 translate-middle text-center"
-       >
-         <h1 id="home-intro-title">Ankush Ahuja</h1>
-         <h2 id="home-intro-undertitle">
+      <div id="particles"></div>
+      <div
+        class="position-absolute top-50 start-50 translate-middle text-center"
+      >
+        <h1 id="home-intro-title">Ankush Ahuja</h1>
+        <h2 id="home-intro-undertitle">
           <span id="student">Student.</span>
           <span id="competitiveprog">Competitive Programming.</span>
           <span id="softwaredev">Software Development.</span>
           <span id="datascience">Data Science.</span>
         </h2>
-         <div id="home-intro-icons">
-           <i class="ph ph-github-logo"></i>
-           <i class="ph ph-linkedin-logo"></i>
-           <i class="ph ph-envelope"></i>
-           <i class="ph ph-terminal"></i>
-           <i class="ph ph-binoculars"></i>
-         </div>
-       </div>
+        <div id="home-intro-icons">
+          <i class="ph ph-github-logo"></i>
+          <i class="ph ph-linkedin-logo"></i>
+          <i class="ph ph-envelope"></i>
+          <i class="ph ph-terminal"></i>
+          <i class="ph ph-binoculars"></i>
+        </div>
+      </div>
     </section>
-    
+
     <!-- SCRIPTS -->
 
     <script src="out/js/utils.js"></script>

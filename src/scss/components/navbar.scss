@@ -1,0 +1,50 @@
+#nav {
+  backdrop-filter: blur(10px);
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgba($black, 0.25);
+
+  #brandLogo {
+    background: linear-gradient(
+      -45deg,
+      lighten($red, 0%),
+      lighten($pink, 0%),
+      lighten($dark_purple, 0%),
+      lighten($purple, 0%),
+      lighten($cyan, 0%),
+      lighten($blue, 0%),
+      lighten($vibrant_green, 0%),
+      lighten($green, 0%),
+      lighten($yellow, 0%),
+      lighten($orange, 0%)
+    );
+    background-size: 400% 400%;
+    -webkit-mask: url(/src/image/logo.svg) left/contain;
+    mask: url(/src/img/logo.svg) left/contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    height: 1.5em;
+    width: 10vw;
+    animation: gradient 15s ease infinite;
+  }
+  * {
+    #nav-icons {
+      width: 10vw;
+      i {
+        padding: 0.15em;
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
