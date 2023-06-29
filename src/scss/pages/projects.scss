@@ -1,0 +1,59 @@
+@import "../base";
+
+#home-projects {
+  table {
+    border: 0;
+    * {
+      border: 0;
+    }
+    #scripting-alg {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.25) 0%,
+          rgba(0, 0, 0, 1) 95%
+        ),
+        url(/src/img/home_algorithms.png) left center;
+      background-size: cover;
+    }
+    #software-dev {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.25) 0%,
+          rgba(0, 0, 0, 1) 95%
+        ),
+        url(/src/img/software_dev.png) 30% center;
+      background-size: cover;
+    }
+    #web-design {
+      background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.25) 0%,
+          rgba(0, 0, 0, 1) 95%
+        ),
+        url(/src/img/home_design.png) center center;
+      background-size: cover;
+    }
+    #scripting-alg,
+    #software-dev,
+    #web-design {
+      filter: brightness(75%);
+      width: calc(100vw / 3);
+      span {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: 4em;
+        font-family: "Josefin Sans", sans-serif;
+        padding-top: 0.6em;
+        color: darken($white, 25%);
+
+        &:hover {
+          padding-top: 1.2em;
+          color: $white;
+        }
+      }
+      &:hover {
+        filter: brightness(100%);
+      }
+    }
+  }
+}

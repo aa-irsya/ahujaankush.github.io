@@ -4,6 +4,28 @@
   font-family: "Josefin Sans", sans-serif;
   background-color: rgba($black, 0.25);
 
+  * {
+    .nav-item {
+      margin: 0 0.4em;
+      padding-right: 0.5em;
+      border-bottom: 0.01em solid transparent;
+      &:hover {
+        border-bottom: 0.1em solid $white;
+      }
+    }
+    .dropdown-menu {
+      backdrop-filter: blur(10px);
+      background-color: rgba($black, 0.25);
+      .dropdown-item {
+        color: darken($white, 25%);
+        &:hover {
+          background: rgba($black, 0.5);
+          color: $white;
+        }
+      }
+    }
+  }
+
   #brandLogo {
     background: linear-gradient(
       -45deg,
@@ -23,8 +45,9 @@
     mask: url(/src/img/logo.svg) left/contain;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
-    height: 1.5em;
-    width: 10vw;
+    height: 1.25em;
+    width: 1.25em;
+    margin: 0 0.5em;
     animation: gradient 15s ease infinite;
   }
   * {

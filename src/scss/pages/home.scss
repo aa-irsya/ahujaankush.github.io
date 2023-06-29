@@ -1,4 +1,4 @@
-@import "../base";
+@import "../theme";
 
 #particles {
   height: 100vh;
@@ -6,8 +6,7 @@
 }
 
 #home-intro {
-  overflow: hidden;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)),
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 1) 95%),
     url("https://images.unsplash.com/photo-1491956175078-460aea0914ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1550&q=80")
       center center;
   background-size: cover;
@@ -39,7 +38,7 @@
   #home-intro-undertitle {
     font-size: 2em;
     margin-top: 1.5em;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "Comfortaa", cursive;
     span {
       &#student {
         background: -webkit-linear-gradient(-45deg, $green, $blue);
@@ -76,9 +75,75 @@
 
   #home-intro-icons {
     margin-top: 5em;
-    i {
-      font-size: 2em;
-      padding: 1.3em;
+    a {
+      text-decoration: none;
+      i {
+        transition: 0.3s;
+        font-size: 2em;
+        margin: 1em;
+        padding: 0.3em;
+        border-radius: 99px;
+        text-decoration: none;
+
+        &#home-intro-github-icon {
+          color: $purple;
+          &:hover {
+            background: $purple;
+            color: $darker-black;
+            box-shadow: 0px 10px 30px rgba($purple, 0.8);
+          }
+        }
+        &#home-intro-linkedin-icon {
+          color: $blue;
+          &:hover {
+            background: $blue;
+            color: $darker-black;
+            box-shadow: 0px 10px 30px rgba($blue, 0.8);
+          }
+        }
+        &#home-intro-email-icon {
+          color: $green;
+          &:hover {
+            background: $green;
+            color: $darker-black;
+            box-shadow: 0px 10px 30px rgba($green, 0.8);
+          }
+        }
+        &#home-intro-terminal-icon {
+          color: $yellow;
+          &:hover {
+            background: $yellow;
+            color: $darker-black;
+            box-shadow: 0px 10px 30px rgba($yellow, 0.8);
+          }
+        }
+        &#home-intro-telescope-icon {
+          color: $red;
+          &:hover {
+            background: $red;
+            color: $darker-black;
+            box-shadow: 0px 10px 30px rgba($red, 0.8);
+          }
+        }
+      }
+    }
+  }
+
+  * {
+    #home-intro-scroll-down-container {
+      padding-bottom: 1.75em;
+      animation: home-intro-scroll-down-anim 1.25s ease infinite;
+
+      #home-intro-scroll-down-button {
+        color: $white;
+        text-decoration: none;
+        #home-intro-scroll-down-icon {
+          font-size: 1.1em;
+          padding: 0.33em;
+          border-radius: 99px;
+          border: 0.125em solid $white;
+        }
+      }
     }
   }
 }
@@ -92,5 +157,17 @@
   }
   100% {
     background-position: 100% 50%;
+  }
+}
+
+@keyframes home-intro-scroll-down-anim {
+  0% {
+    padding-bottom: 1.75em;
+  }
+  50% {
+    padding-bottom: 1.25em;
+  }
+  100% {
+    padding-bottom: 1.75em;
   }
 }

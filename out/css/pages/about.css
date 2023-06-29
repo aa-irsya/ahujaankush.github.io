@@ -111,4 +111,51 @@ section.descsec p {
   font-size: 1em;
 }
 
-/*# sourceMappingURL=base.css.map */
+#home-about-email form input,
+#home-about-email form textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25em;
+  margin-bottom: 2em;
+  width: 90%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 0.1em solid #ff62a4;
+  color: #ffffff;
+}
+#home-about-email form input:focus,
+#home-about-email form textarea:focus {
+  border-bottom: 0.1em solid #f7467b;
+  outline: none;
+}
+#home-about-email form input:focus::placeholder,
+#home-about-email form textarea:focus::placeholder {
+  color: white;
+}
+#home-about-email form input::placeholder,
+#home-about-email form textarea::placeholder {
+  color: #cccccc;
+}
+#home-about-email form #home-about-email-send-btn {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #b467f9;
+  background: transparent;
+  border: 3px solid #b467f9;
+  padding: 8px 40px;
+  width: 35%;
+  border-radius: 80px;
+  font-weight: bold;
+  margin: 2vh 0px;
+  transition: 0.4s ease-in-out;
+}
+#home-about-email form #home-about-email-send-btn:hover {
+  box-shadow: 0px 10px 40px rgba(149, 84, 255, 0.8);
+  background: #9554ff;
+  color: #ffffff;
+  border-color: #9554ff;
+  cursor: pointer;
+  outline: none;
+}
+
+/*# sourceMappingURL=about.css.map */

@@ -4,6 +4,8 @@
     <title>Ankush Ahuja</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="src/img/logo.svg" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,10 +22,13 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
-
-    <link href="./out/css/pages/home.css" rel="stylesheet" />
-    <link href="./out/css/base.css" rel="stylesheet" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link href="./out/css/themeclass.css" rel="stylesheet" />
+    <link href="./out/css/base.css" rel="stylesheet" />
+    <link href="./out/css/pages/home.css" rel="stylesheet" />
+    <link href="./out/css/pages/projects.css" rel="stylesheet" />
+    <link href="./out/css/pages/about.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Navigation bar -->
@@ -42,7 +47,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav pl-md-5 mx-auto">
+          <ul class="navbar-nav pl-md-5 container-fluid justify-content-end">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -57,23 +62,21 @@
                 Projects
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Scripting & Algorithms</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Software Development</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Web/Design/Creativity</a>
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#home-about">About</a>
             </li>
           </ul>
-          <div class="d-flex justify-content-end" id="nav-icons">
-            <i class="ph ph-github-logo"></i>
-            <i class="ph ph-linkedin-logo"></i>
-            <i class="ph ph-envelope"></i>
-          </div>
         </div>
       </div>
     </nav>
@@ -91,15 +94,65 @@
           <span id="datascience">Data Science.</span>
         </h2>
         <div id="home-intro-icons">
-          <i class="ph ph-github-logo"></i>
-          <i class="ph ph-linkedin-logo"></i>
-          <i class="ph ph-envelope"></i>
-          <i class="ph ph-terminal"></i>
-          <i class="ph ph-binoculars"></i>
+          <a href="https://github.com/ahujaankush"
+            ><i class="ph ph-github-logo" id="home-intro-github-icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ahujaankush"
+            ><i class="ph ph-linkedin-logo" id="home-intro-linkedin-icon"></i>
+          </a>
+          <a href="mailto:aahuja06@proton.me"
+            ><i class="ph ph-envelope" id="home-intro-email-icon"></i>
+          </a>
+          <a href=""
+            ><i class="ph ph-terminal" id="home-intro-terminal-icon"></i>
+          </a>
+          <a href=""
+            ><i class="ph ph-binoculars" id="home-intro-telescope-icon"></i>
+          </a>
+        </div>
+      </div>
+      <div class="position-absolute bottom-0 start-50 translate-middle-x">
+        <div id="home-intro-scroll-down-container">
+          <a href="#home-projects" id="home-intro-scroll-down-button">
+            <i class="ph ph-caret-double-down" id="home-intro-scroll-down-icon">
+            </i
+          ></a>
         </div>
       </div>
     </section>
 
+    <section class="full" id="home-projects">
+      <table class="table text-center fullh">
+        <thead>
+          <tr>
+            <th scope="col" id="scripting-alg">
+              <span>Scripting & Algorithms</span>
+            </th>
+            <th scope="col" id="software-dev">
+              <span>Software Development</span>
+            </th>
+            <th scope="col" id="web-design">
+              <span>Web/Design/Creativity</span>
+            </th>
+          </tr>
+        </thead>
+      </table>
+    </section>
+
+    <section class="full" id="home-about">
+      <div class="container-fluid row full">
+        <div class="col-7 blue-bg"></div>
+        <div class="col" id="home-about-email">
+          <form>
+            <input type="text" placeholder="name" required />
+            <input type="email" placeholder="email" required /><br />
+            <textarea placeholder="your message" required rows="5"></textarea
+            ><br />
+            <button id="home-about-email-send-btn">send</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <!-- SCRIPTS -->
 
     <script src="out/js/utils.js"></script>

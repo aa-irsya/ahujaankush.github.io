@@ -3,6 +3,25 @@
   font-family: "Josefin Sans", sans-serif;
   background-color: rgba(14, 17, 21, 0.25);
 }
+#nav * .nav-item {
+  margin: 0 0.4em;
+  padding-right: 0.5em;
+  border-bottom: 0.01em solid transparent;
+}
+#nav * .nav-item:hover {
+  border-bottom: 0.1em solid #ffffff;
+}
+#nav * .dropdown-menu {
+  backdrop-filter: blur(10px);
+  background-color: rgba(14, 17, 21, 0.25);
+}
+#nav * .dropdown-menu .dropdown-item {
+  color: #bfbfbf;
+}
+#nav * .dropdown-menu .dropdown-item:hover {
+  background: rgba(14, 17, 21, 0.5);
+  color: #ffffff;
+}
 #nav #brandLogo {
   background: linear-gradient(-45deg, #f7467b, #ff75a0, #9554ff, #b467f9, #2bfcfc, #2798e4, #1addb0, #00ffb1, #ffc457, #ff8a30);
   background-size: 400% 400%;
@@ -10,8 +29,9 @@
   mask: url(/src/img/logo.svg) left/contain;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  height: 1.5em;
-  width: 10vw;
+  height: 1.25em;
+  width: 1.25em;
+  margin: 0 0.5em;
   animation: gradient 15s ease infinite;
 }
 #nav * #nav-icons {
