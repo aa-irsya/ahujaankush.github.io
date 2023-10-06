@@ -1,0 +1,18 @@
+.sec_sp {
+  margin-bottom: calc(3rem + 5.128vw);
+}
+
+.table td,
+.table th {
+  color: var(--text-color);
+  background: transparent;
+}
+
+.table td img {
+  height: 20px;
+  width: auto;
+}
+
+.t_border {
+  border-color: var(--text-color) !important;
+}
