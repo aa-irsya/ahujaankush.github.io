@@ -22,29 +22,24 @@
 }
 
 .nav_ac {
-  padding: 5px 15px;
   margin: 0;
   border: unset;
   background: transparent;
   font-size: 1.25rem;
   font-family: Marcellus;
   color: var(--text-color-2);
-  line-height: 2;
-  height: 50px;
-  font-weight: bold;
   z-index: 1000;
 }
 
-.nav_ac_element {
-  display: inline-block;
+.nav_ac .logo {
+  position: absolute;
+  height: 25px;
+  width: auto;
+  margin-left: 10px;
 }
 
-.nav_ac_element_rotated {
-  display: inline-block;
-  transform: scaleY(-1);
-  -webkit-transform: scaleY(-1);
-  -ms-transform: scaleY(-1);
-  -o-transform: scaleY(-1);
+.nav_ac .logo.invert {
+  filter: invert(100%);
 }
 
 .nav_ac:hover {
@@ -115,12 +110,12 @@
   height: 100%;
   background: var(--overlay-color);
   will-change: transform;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
   transition: 0.5s ease all;
 }
 
 .menu__opend .bg__menu {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .menu__wrapper {

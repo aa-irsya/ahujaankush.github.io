@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./style.css";
 import { VscGrabber, VscClose } from "react-icons/vsc";
 import { Link } from "react-router-dom";
-import { logotext, socialprofils } from "../content_option";
+import { introdata, logo, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
-const Headermain = ({ themeToggle }) => {
+const Headermain = ({ themeToggle, theme }) => {
   const [isActive, setActive] = useState("false");
 
   const handleToggle = () => {
@@ -17,12 +17,10 @@ const Headermain = ({ themeToggle }) => {
     <header className="fixed-top site__header">
       <div className="d-flex align-items-center justify-content-between">
         <Link className="navbar-brand nav_ac" to="/">
-          {logotext.split(" ").map((e, i) => (
-            <span className={(i+1)%2 === 0 ? "nav_ac_element_rotated" : "nav_ac_element"} key={i}>{e.charAt(0)}</span>
-          ))}
+          <img className={"logo " + (theme === "dark" ? "" : "invert")} src={logo.img} alt="Logo" />
         </Link>
         <div className="d-flex align-items-center">
-          <Themetoggle themeToggle={themeToggle} />
+          <Themetoggle themeToggle={themeToggle} theme={theme} />
           <button className="menu__button  nav_ac" onClick={handleToggle}>
             {!isActive ? <VscClose /> : <VscGrabber />}
           </button>
@@ -41,7 +39,6 @@ const Headermain = ({ themeToggle }) => {
                 </li>
                 <li className="menu_item">
                   <Link onClick={handleToggle} to="/blog" className="my-3">
-                    {" "}
                     Blog
                   </Link>
                 </li>
@@ -52,7 +49,6 @@ const Headermain = ({ themeToggle }) => {
                 </li>
                 <li className="menu_item">
                   <Link onClick={handleToggle} to="/contact" className="my-3">
-                    {" "}
                     Contact
                   </Link>
                 </li>
@@ -66,7 +62,7 @@ const Headermain = ({ themeToggle }) => {
             <a href={socialprofils.github}>Github</a>
             <a href={socialprofils.twitter}>Twitter</a>
           </div>
-          <p className="copyright m-0">copyright __ {logotext}</p>
+          <p className="copyright m-0">copyright __ {introdata.name}</p>
         </div>
       </div>
     </header>

@@ -2,10 +2,16 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import { dataabout, meta, worktimeline } from "../../content_option";
+import {
+  dataabout,
+  meta,
+  worktimeline,
+  schooltimeline,
+} from "../../content_option";
 import { BasicWebContainer } from "../../components/BasicWebContainer";
+import transition from "../../app/transition";
 
-export const About = () => {
+const About = ({ theme }) => {
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -34,7 +40,7 @@ export const About = () => {
           </Row>
           <Row className=" sec_sp">
             <Col lg="5">
-              <h3 className="color_sec py-4">Work Timline</h3>
+              <h3 className="color_sec py-4">Work Timeline</h3>
             </Col>
             <Col lg="7">
               <table className="table caption-top">
@@ -42,8 +48,37 @@ export const About = () => {
                   {worktimeline.map((data, i) => {
                     return (
                       <tr key={i}>
-                        <th scope="row">{data.jobtitle}</th>
-                        <td><img src={data.img} alt={data.where} />  {data.where}</td>
+                        <th scope="row">{data.title}</th>
+                        <td>
+                          <img src={data.img} alt={data.where} /> {data.where}
+                        </td>
+                        <td>{data.date}</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </Col>
+          </Row>
+          <Row className=" sec_sp">
+            <Col lg="5">
+              <h3 className="color_sec py-4">School Timeline</h3>
+            </Col>
+            <Col lg="7">
+              <table className="table caption-top">
+                <tbody>
+                  {schooltimeline.map((data, i) => {
+                    return (
+                      <tr key={i}>
+                        <th scope="row">{data.title}</th>
+                        <td>
+                          <img
+                            className={theme === "dark" ? "invert_img" : ""}
+                            src={data.img}
+                            alt={data.where}
+                          />
+                          {data.where}
+                        </td>
                         <td>{data.date}</td>
                       </tr>
                     );
@@ -57,3 +92,5 @@ export const About = () => {
     </HelmetProvider>
   );
 };
+
+export default About;

@@ -1,6 +1,11 @@
 import dynatrace from "./assets/images/dynatrace.svg";
+import tgm from "./assets/images/tgm.png";
+import logoImg from "./assets/images/logo.svg"
 
-const logotext = "Ankush Ahuja";
+const logo = {
+  img: logoImg,
+}
+
 const meta = {
   title: "Ankush Ahuja",
   description: "Ankush Ahuja - Data Science",
@@ -24,7 +29,7 @@ const colors = {
     "text-color": "#000000",
     "text-color-2": "#333333",
     "text-color-3": "#00ffb1",
-    "particles-color": "#3b3f44",
+    "particles-color": "#7b848d",
     "overlay-color": "rgb(255 255 255 / 70%)",
   },
 };
@@ -33,23 +38,32 @@ const introdata = {
   title: "Ankush Ahuja",
   animated: {
     first: "Software Engineer",
-    second: "Data Sciencist",
+    second: "Data Scientist",
     third: "Competitive Programmer",
   },
-  description: "Student specializing in data science & software engineering.",
 };
 
 const dataabout = {
-  title: "Me and myself",
+  title: "Me, myself and I",
   aboutme:
     "I am a 17-year-old student from Austria, currently enrolled at a technical high school (HTL) in the Department of Information Technology, specializing in data science.",
 };
+
 const worktimeline = [
   {
-    jobtitle: "Software Engineering Intern",
+    title: "Software Engineering Intern",
     where: "Dynatrace",
     img: dynatrace,
     date: "Jul 2023 - Aug 2023",
+  },
+];
+
+const schooltimeline = [
+  {
+    title: "HTL - Information Technology",
+    where: "TGM",
+    img: tgm,
+    date: "Sep 2020 - Present",
   },
 ];
 
@@ -132,7 +146,7 @@ const dataportfolio = [
 const contactConfig = {
   YOUR_EMAIL: "aahuja06@proton.me",
   description:
-    "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
+    "As a full-time student I am not able to take on requests about collaborations but please feel free to send me feedback on this website or any other project I have worked on!",
   // creat an emailjs.com account
   // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
   YOUR_SERVICE_ID: "service_id",
@@ -151,8 +165,9 @@ export {
   dataabout,
   dataportfolio,
   worktimeline,
+  schooltimeline,
   introdata,
   contactConfig,
   socialprofils,
-  logotext,
+  logo,
 };

@@ -4,8 +4,10 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
 import { dataportfolio, meta } from "../../content_option";
 import { BasicWebContainer } from "../../components/BasicWebContainer";
+import transition from "../../app/transition";
 
-export const Blog = () => {
+const Blog = ({theme}) => {
+  console.log(theme)
   return (
     <HelmetProvider>
       <Container className="About-header">
@@ -40,3 +42,5 @@ export const Blog = () => {
     </HelmetProvider>
   );
 };
+
+export default transition(Blog)

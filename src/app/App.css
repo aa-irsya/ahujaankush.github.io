@@ -9,7 +9,7 @@ section {
 
 .page_bg__blur {
   background: var(--overlay-color);
-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
 }
 
 .page-enter {
@@ -75,30 +75,6 @@ backdrop-filter: blur(10px);
   }
 }
 
-.sec .intro {
-  max-width: 450px;
-  margin: 0 auto;
-}
-
-@media (max-width: 991.98px) {
-  .sec .intro {
-    max-width: 700px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-.sec .intro .feature .wrap-icon {
-  background: 0 0 !important;
-  width: auto;
-  height: auto;
-  margin-bottom: 0;
-}
-
-.sec .intro .feature .wrap-icon svg {
-  color: #5cccc9;
-}
-
 .sec .text h1 {
   font-size: 64px;
   font-weight: 700;
@@ -115,7 +91,6 @@ backdrop-filter: blur(10px);
   min-height: 700px;
   position: relative;
 }
-
 
 .sec .h_bg-image .block {
   bottom: 50vh;
@@ -174,4 +149,26 @@ backdrop-filter: blur(10px);
 
 .sec .h_bg-image {
   filter: saturate(0.5);
+}
+
+.slide-in {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--secondary-color);
+  transform-origin: bottom;
+}
+
+.slide-out {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--secondary-color);
+  transform-origin: top;
 }

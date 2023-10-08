@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { WiMoonAltWaningCrescent4 } from "react-icons/wi";
+import { WiMoonAltWaningCrescent4, WiDaySunny } from "react-icons/wi";
 
-const Themetoggle = ({ themeToggle }) => {
+const Themetoggle = ({ themeToggle, theme }) => {
   return (
     <div className="nav_ac" onClick={themeToggle}>
-      <WiMoonAltWaningCrescent4 />
+      {(theme === "dark" ? <WiMoonAltWaningCrescent4 /> : <WiDaySunny />)}
     </div>
   );
 };

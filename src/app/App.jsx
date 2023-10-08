@@ -1,25 +1,21 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, useLocation } from "react-router-dom";
-import withRouter from "../hooks/withRouter";
-import AppRoutes from "./routes";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Headermain from "../header";
 import AnimatedCursor from "../hooks/AnimatedCursor";
 import ParticlesBackground from "../components/ParticlesBackground";
+import { Socialicons } from "../components/socialicons";
 import { colors } from "../content_option";
 import "./App.css";
-
-function _ScrollToTop(props) {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return props.children;
-}
-const ScrollToTop = withRouter(_ScrollToTop);
+import { AnimatePresence } from "framer-motion";
+import Home from "../pages/home";
+import About from "../pages/about";
+import Blog from "../pages/blog";
+import Contact from "../pages/contact";
 
 export default function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") ?? "dark");
+  const location = useLocation();
   const themeToggle = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
@@ -29,13 +25,14 @@ export default function App() {
   }, [theme]);
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <>
       <div className={"w-100 h-100 position-fixed"}>
         <ParticlesBackground
           bg={"transparent"}
           color={colors[theme]["particles-color"]}
         />
       </div>
+
       <div className="cursor__dot">
         <AnimatedCursor
           innerSize={15}
@@ -46,10 +43,18 @@ export default function App() {
           outerScale={5}
         />
       </div>
-      <ScrollToTop>
-        <Headermain themeToggle={themeToggle} />
-        <AppRoutes theme={theme} />
-      </ScrollToTop>
-    </Router>
+
+      <AnimatePresence mode="wait">
+        <Routes key={location.pathname} location={location}>
+          <Route index element={<Home theme={theme} />} />
+          <Route path="/about" element={<About theme={theme} />} />
+          <Route path="/blog" element={<Blog theme={theme} />} />
+          <Route path="/contact" element={<Contact theme={theme} />} />
+        </Routes>
+      </AnimatePresence>
+
+      <Headermain themeToggle={themeToggle} theme={theme} />
+      <Socialicons />
+    </>
   );
 }

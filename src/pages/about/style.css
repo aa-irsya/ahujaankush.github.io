@@ -16,3 +16,8 @@
 .t_border {
   border-color: var(--text-color) !important;
 }
+
+.invert_img {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
