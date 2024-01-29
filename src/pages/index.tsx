@@ -2,8 +2,7 @@ import Head from 'next/head'
 import Home from './Home'
 import Contact from './Contact'
 import About from './About'
-import { Box, IconButton, Typography, useColorScheme } from '@mui/joy'
-import { Typewriter } from 'react-simple-typewriter'
+import { Box, IconButton, Typography } from '@mui/joy'
 import { CloseSharp, Email, Instagram, LinkedIn, MenuSharp } from '@mui/icons-material'
 import ThemeToggle from '@/components/themeToggle'
 
@@ -81,7 +80,7 @@ export default function OnePager({ setColorScheme }: { setColorScheme: Function 
             ))
           }
         </Box>
-        <Box sx={{ overflowY: 'auto', width: 'calc(100vw - 4rem)'}}>
+        <Box sx={{ overflowY: 'auto', width: 'calc(100vw - 4rem)' }}>
           <Home />
           <About />
           <Contact />

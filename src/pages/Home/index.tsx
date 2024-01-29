@@ -1,20 +1,17 @@
-import { Email, Instagram, LinkedIn } from "@mui/icons-material";
 import { Box, IconButton, Stack, Typography } from "@mui/joy";
 import { Typewriter } from "react-simple-typewriter";
-import { useEffect, useRef } from "react";
-import { overusedGroteskMedium } from "..";
+import BlendedTypography from "@/components/BlendedTypography";
 
 export default function Home() {
   return (
     <Box sx={{
       display: 'flex', flexDirection: 'column', justifyContent: 'center', flexGrow: 1, minHeight: '100vh', zIndex: 999, padding: '2rem'
     }}>
-      <Typography textTransform={'uppercase'} sx={{
+      <BlendedTypography textTransform={'uppercase'} sx={{
         fontSize: {
           xs: '2rem',
           sm: '8vw',
         },
-        fontFamily: overusedGroteskMedium.style.fontFamily,
         fontWeight: 700,
         lineHeight: 0.6,
         paddingY: 2,
@@ -27,7 +24,7 @@ export default function Home() {
         <Typography sx={{
           display: 'bock',
           fontSize: {
-            xs: '1.5rem',
+            xs: '1.4rem',
             sm: '5vw'
           },
         }}>
@@ -41,16 +38,18 @@ export default function Home() {
             delaySpeed={2500}
           />
         </Typography>
-      </Typography>
-      <Typography sx={{
+      </BlendedTypography>
+      <BlendedTypography sx={{
         fontSize: {
           xs: '1rem',
           sm: '2vw'
         },
+        color: 'white',
+        mixBlendMode: 'difference',
       }} level="body-sm">
         Software Engineering & Data Science student<br />
         based in Vienna, Austria.
-      </Typography>
+      </BlendedTypography>
     </Box>
   )
 }

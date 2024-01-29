@@ -16,6 +16,22 @@ export default function App({ Component, pageProps }: AppProps) {
     canvasRef.current?.dispatchEvent(new MouseEvent(event.type, event))
   };
 
+  const handleTouchEvent = (event: TouchEvent) => {
+    canvasRef.current?.dispatchEvent(new TouchEvent(event.type, {
+      bubbles: event.bubbles,
+      cancelable: event.cancelable,
+      view: event.view,
+      detail: event.detail,
+      shiftKey: event.shiftKey,
+      altKey: event.altKey,
+      metaKey: event.metaKey,
+      touches: Array.from(event.touches),
+      targetTouches: Array.from(event.targetTouches),
+      changedTouches: Array.from(event.changedTouches)
+    }
+    ))
+  };
+
 
   useEffect(() => {
     webGLFluidEnhanced.simulation(canvasRef.current, {
@@ -44,15 +60,16 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [colorScheme])
 
   useEffect(() => {
-    divRef.current?.addEventListener('click', handleMouseEvent);
+    divRef.current?.addEventListener('touchstart', handleTouchEvent)
+    divRef.current?.addEventListener('touchmove', handleTouchEvent)
+    divRef.current?.addEventListener('touchend', handleTouchEvent)
     divRef.current?.addEventListener('mousemove', handleMouseEvent);
     divRef.current?.addEventListener('mousedown', handleMouseEvent);
     divRef.current?.addEventListener('mouseup', handleMouseEvent);
     divRef.current?.addEventListener('mouseover', handleMouseEvent);
     divRef.current?.addEventListener('mouseout', handleMouseEvent);
     if (canvasRef.current != null) {
-      canvasRef.current.style.filter = 'blur(10px)'
-      canvasRef.current.addEventListener('click', () => { webGLFluidEnhanced.splats() })
+      canvasRef.current.style.filter = 'blur(5px)'
     }
   }, [])
 
