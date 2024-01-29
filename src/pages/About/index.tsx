@@ -13,7 +13,7 @@ export default function About() {
         },
         fontFamily: overusedGroteskMedium.style.fontFamily,
         fontWeight: 700,
-        lineHeight: 1
+        lineHeight: 1,
       }} level='title-lg'>
         About Me
       </Typography>

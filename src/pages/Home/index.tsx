@@ -16,17 +16,20 @@ export default function Home() {
         },
         fontFamily: overusedGroteskMedium.style.fontFamily,
         fontWeight: 700,
-        lineHeight: 1
+        lineHeight: 0.6,
+        paddingY: 2,
       }} level='title-lg'>
-        <Typography sx={{ display: 'block' }}>
+        <Typography sx={{
+          display: 'block',
+        }}>
           Ankush Ahuja
         </Typography>
         <Typography sx={{
+          display: 'bock',
           fontSize: {
             xs: '1.5rem',
             sm: '5vw'
           },
-          display: 'block'
         }}>
           <Typewriter
             words={['Software Engineer', 'Data Scientist', 'Robotics Ethusiast']}
@@ -43,7 +46,7 @@ export default function Home() {
         fontSize: {
           xs: '1rem',
           sm: '2vw'
-        }
+        },
       }} level="body-sm">
         Software Engineering & Data Science student<br />
         based in Vienna, Austria.

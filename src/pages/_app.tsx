@@ -16,6 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
     canvasRef.current?.dispatchEvent(new MouseEvent(event.type, event))
   };
 
+
   useEffect(() => {
     webGLFluidEnhanced.simulation(canvasRef.current, {
       COLOR_PALETTE: [
@@ -49,7 +50,10 @@ export default function App({ Component, pageProps }: AppProps) {
     divRef.current?.addEventListener('mouseup', handleMouseEvent);
     divRef.current?.addEventListener('mouseover', handleMouseEvent);
     divRef.current?.addEventListener('mouseout', handleMouseEvent);
-    if (canvasRef.current != null) canvasRef.current.style.filter = 'blur(10px)'
+    if (canvasRef.current != null) {
+      canvasRef.current.style.filter = 'blur(10px)'
+      canvasRef.current.addEventListener('click', () => { webGLFluidEnhanced.splats() })
+    }
   }, [])
 
   return (
