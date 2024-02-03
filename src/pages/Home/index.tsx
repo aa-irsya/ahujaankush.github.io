@@ -1,13 +1,24 @@
-import { Box, IconButton, Stack, Typography } from "@mui/joy";
+import { Box, Typography } from "@mui/joy";
 import { Typewriter } from "react-simple-typewriter";
-import BlendedTypography from "@/components/BlendedTypography";
+import StyledTypgraphy from "@/components/TypographyStyled";
 
-export default function Home() {
+export default function Home({ colorScheme, setColorScheme }: { colorScheme: string, setColorScheme: Function }) {
   return (
     <Box sx={{
-      display: 'flex', flexDirection: 'column', justifyContent: 'center', flexGrow: 1, minHeight: '100vh', zIndex: 999, padding: '2rem'
+      display: 'flex', flexDirection: 'column', justifyContent: 'center', flexGrow: 1, minHeight: '100vh', zIndex: 1, padding: '2rem'
     }}>
-      <BlendedTypography textTransform={'uppercase'} sx={{
+      <Box className="backgroundGradient" sx={{
+        position: 'absolute',
+        margin: 'auto',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        zIndex: -999,
+        opacity: colorScheme == 'dark' ? 0.2 : 0.5,
+        backgroundImage: 'linear-gradient(to right, #ff8a30 0%, #F7467B 25%, #B467F9 50%, #2BFCFC 75%, #00FFB1 100%)'
+      }}></Box>
+      <StyledTypgraphy textTransform={'uppercase'} sx={{
         fontSize: {
           xs: '2rem',
           sm: '8vw',
@@ -38,8 +49,8 @@ export default function Home() {
             delaySpeed={2500}
           />
         </Typography>
-      </BlendedTypography>
-      <BlendedTypography sx={{
+      </StyledTypgraphy>
+      <StyledTypgraphy sx={{
         fontSize: {
           xs: '1rem',
           sm: '2vw'
@@ -49,7 +60,7 @@ export default function Home() {
       }} level="body-sm">
         Software Engineering & Data Science student<br />
         based in Vienna, Austria.
-      </BlendedTypography>
+      </StyledTypgraphy>
     </Box>
   )
 }

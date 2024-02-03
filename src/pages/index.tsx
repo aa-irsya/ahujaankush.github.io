@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Home from './Home'
-import Contact from './Contact'
+import Projects from './Projects'
 import About from './About'
-import { Box, IconButton, Typography } from '@mui/joy'
+import { Box, Divider, IconButton, Typography } from '@mui/joy'
 import { CloseSharp, Email, Instagram, LinkedIn, MenuSharp } from '@mui/icons-material'
 import ThemeToggle from '@/components/themeToggle'
 
@@ -17,16 +17,17 @@ function Navigation() {
 
   return (
     <>
-      <IconButton sx={{ position: 'absolute', top: open ? '-50rem' : '3rem', right: '3rem', padding: 2, transition: 'top 1s, padding 0.25s, margin 0.25s', borderRadius: 99, backgroundColor: 'background.body', '&:hover': { backgroundColor: 'background.level2', padding: 1.5, margin: 0.5, } }} size='lg' onClick={() => setOpen(true)}>
+      <IconButton sx={{ zIndex: 999, position: 'absolute', top: open ? '-50rem' : '3rem', right: '3rem', padding: 2, transition: 'top 1s, padding 0.25s, margin 0.25s', borderRadius: 99, backgroundColor: 'background.level1', '&:hover': { backgroundColor: 'background.level2', padding: 1.5, margin: 0.5, } }} size='lg' onClick={() => setOpen(true)}>
         <MenuSharp />
       </IconButton>
       <Box sx={{
+        zIndex: 999,
         position: "absolute",
         top: open ? '3rem' : '-50rem',
         transition: 'top 1s',
         right: '3rem',
         width: '8rem',
-        backgroundColor: 'background.surface',
+        backgroundColor: 'background.level1',
         paddingX: 2,
         paddingY: 1,
         borderRadius: 5
@@ -52,7 +53,7 @@ function Navigation() {
 }
 
 
-export default function OnePager({ setColorScheme }: { setColorScheme: Function }) {
+export default function OnePager(props: { colorScheme: string, setColorScheme: Function }) {
   return (
     <>
       <Head>
@@ -70,7 +71,7 @@ export default function OnePager({ setColorScheme }: { setColorScheme: Function 
             justifySelf: 'flex-start',
             flexGrow: 1
           }}>
-            <ThemeToggle setColorScheme={setColorScheme} />
+            <ThemeToggle setColorScheme={props.setColorScheme} />
           </Box>
           {
             [{ icon: <LinkedIn />, link: '' }, { icon: <Instagram />, link: '' }, { icon: <Email />, link: '' }].map((e, i) => (
@@ -81,9 +82,10 @@ export default function OnePager({ setColorScheme }: { setColorScheme: Function 
           }
         </Box>
         <Box sx={{ overflowY: 'auto', width: 'calc(100vw - 4rem)' }}>
-          <Home />
+          <Home {...props} />
           <About />
-          <Contact />
+          <Divider />
+          <Projects />
         </Box>
       </Box>
     </>
