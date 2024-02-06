@@ -15,7 +15,10 @@ export default function Home({ colorScheme, setColorScheme }: { colorScheme: str
         right: 0,
         bottom: 0,
         zIndex: -999,
-        opacity: colorScheme == 'dark' ? 0.2 : 0.5,
+        opacity: {
+          xs: colorScheme == 'dark' ? 0.5 : 1,
+          sm: colorScheme == 'dark' ? 0.2 : 0.5
+        },
         backgroundImage: 'linear-gradient(to right, #ff8a30 0%, #F7467B 25%, #B467F9 50%, #2BFCFC 75%, #00FFB1 100%)'
       }}></Box>
       <StyledTypgraphy textTransform={'uppercase'} sx={{
