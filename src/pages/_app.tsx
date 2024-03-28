@@ -1,16 +1,18 @@
-import type { AppProps } from 'next/app'
-import '@/styles/globals.css'
-import { Box, CssBaseline, CssVarsProvider, useColorScheme } from '@mui/joy'
-import theme from "@/theme";
-import { useEffect, useRef, useState } from 'react'
+import "@/styles/globals.css";
+import { Box, CssBaseline, CssVarsProvider } from "@mui/joy";
+import type { AppProps } from "next/app";
 
 export default function App({ Component, pageProps }: AppProps) {
-  const [colorScheme, setColorScheme] = useState();
 
   return (
-    <CssVarsProvider disableTransitionOnChange theme={theme}>
+    <CssVarsProvider
+      defaultMode="dark"
+      disableTransitionOnChange
+    >
+      <Box sx={{backgroundColor: 'background.body'}}>
+        <Component {...pageProps} />
+      </Box>
       <CssBaseline />
-      <Component {...pageProps} colorScheme={colorScheme} setColorScheme={setColorScheme} />
     </CssVarsProvider>
   )
 }
