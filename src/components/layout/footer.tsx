@@ -13,12 +13,12 @@ const socials = [
   },
   {
     name: "LinkedIn",
-    link: "",
+    link: "https://www.linkedin.com/in/ahujaankush/",
     icon: <Linkedin color='white' />
   },
   {
     name: "GitHub",
-    link: "",
+    link: "https://github.com/ahujaankush",
     icon: <Github color='white' />
   }
 ]
