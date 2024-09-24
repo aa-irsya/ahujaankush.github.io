@@ -1,5 +1,6 @@
 import Section from "@/components/layout/layout";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import { Blockqoute, Heading1, Large } from "@/components/ui/typography";
 import { ArrowRight } from "lucide-react";
 
@@ -18,15 +19,15 @@ function MarketingQuote() {
 
 function StartingBannerSection() {
   return (
-    <section className="w-full grow h-[35rem] border-b-2 flex flex-row items-start py-16 px-16 pt-28">
+    <section className="w-full grow h-[35rem] flex flex-row items-start py-16 px-16 pt-28">
       <div className="flex grow flex-col self-end">
         <MarketingQuote />
         <Large><u>Gemeinsam</u> mit Ankush Ahuja für ein besseres TGM.</Large>
       </div>
       <div className="flex space-y-2 flex-col self-start justify-items-end">
-        <Button>Mitgestaltung <ArrowRight className="justify-self-end ml-2 h-4 w-4" /></Button>
-        <Button>Zentralisierung <ArrowRight className="justify-self-end ml-2 h-4 w-4" /></Button>
-        <Button>Wahlprogramm <ArrowRight className="justify-self-end ml-2 h-4 w-4" /></Button>
+        <a href="#wahlprogramm"><Button>Wahlprogramm <ArrowRight className="justify-self-end ml-2 h-4 w-4" /></Button></a>
+        <a href="#transparenz"><Button>Transparenz <ArrowRight className="justify-self-end ml-2 h-4 w-4" /></Button></a>
+        <a href="#tsz"><Button>Schülerzentrale<ArrowRight className="justify-self-end ml-2 h-4 w-4" /></Button></a>
       </div>
     </section>
   )
@@ -36,7 +37,8 @@ export default function SV() {
   return (
     <main className="flex flex-col grow items-center">
       <StartingBannerSection />
-      <Section>
+      <Separator />
+      <Section >
         <Heading1>
           Wer bin ich?
         </Heading1>
@@ -44,19 +46,28 @@ export default function SV() {
           Mein Name ist Ankush Ahuja (5DHIT), und in den letzten Jahren habe ich in verschiedenen Bereichen unserer Schule aktiv mitgewirkt, unter anderem in der Taskforce und im Brandschutz. Dabei habe ich festgestellt, dass die <b>Kommunikation zwischen der Schülerschaft und der Schülervertretung</b> oft <b>ineffektiv</b> ist und viele Anliegen nicht die nötige Aufmerksamkeit erhalten. Ein Grund dafür ist die obsessive Fixierung auf bestimmte Wahlpunkte.
         </p>
         <p>
-          Mit meinem Konzept &quot;<i>Eure Stimme, unser Weg</i>&quot; möchte ich einen neuen Ansatz einführen: <u>Nicht ich entscheide, was wichtig ist, sondern <b>ihr</b></u>. Eure Meinungen und Ideen sollen direkt die Richtung bestimmen, in die sich unsere Schule bewegt.</p>
+          Mit meinem Konzept &quot;<i>Eure Stimme, unser Weg!</i>&quot; möchte ich einen neuen Ansatz einführen: <u>Nicht ich entscheide, was wichtig ist, sondern <b>ihr</b></u>. Eure Meinungen und Ideen sollen direkt die Richtung bestimmen, in die sich unsere Schule bewegt.</p>
         <p>
           Ihr habt es in der Hand. Wenn ihr echte Veränderungen wollt, keine Ausreden mehr, dann lasst uns gemeinsam die Dinge anpacken. Jetzt ist die Zeit, eure Stimme zu nutzen!
         </p>
       </Section>
+      <Separator />
       <Section>
-        <Heading1>
-          Jede Meinung zählt!
+        <Heading1 id="wahlprogramm">
+          Mein Wahlprogramm
         </Heading1>
       </Section>
-      <Section>
-        <Heading1>
-          Da sehe ich
+
+      <Separator />
+      <Section >
+        <Heading1 id="transparenz">
+          Transparenz für alle!
+        </Heading1>
+      </Section>
+      <Separator />
+      <Section >
+        <Heading1 id="tsz">
+          TSZ: TGM-Schülerzentrale
         </Heading1>
       </Section>
     </main>
