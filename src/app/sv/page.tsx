@@ -52,10 +52,17 @@ export default function SV() {
         </p>
       </Section>
       <Separator />
-      <Section>
-        <Heading1 id="wahlprogramm">
-          Mein Wahlprogramm
-        </Heading1>
+      <Section className="flex flex-row grow">
+        <div>
+          <Heading1 id="wahlprogramm">
+            Jetzt seid IHR dran!
+          </Heading1>
+          <Large>
+            Jetzt geht es um die Zukunft unserer Schule und DEINE Stimme zählt!
+          </Large>
+          <p>Willst du wirklich etwas verändern? Dann bist du hier genau richtig. Setz dich ein, überzeug deine Mitschüler und mach deine Stimme stark! <b>Bei uns bestimmt die Schülerschaft, was passiert.</b> Nur gemeinsam sorgen wir dafür, dass eure Anliegen gehört und umgesetzt werden.
+          </p>
+        </div>
       </Section>
 
       <Separator />
