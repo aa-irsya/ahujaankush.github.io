@@ -16,7 +16,7 @@ function MarketingQuote() {
   )
 }
 
-export function StartingBannerSection() {
+function StartingBannerSection() {
   return (
     <section className="w-full grow h-[35rem] border-b-2 flex flex-row items-start py-16 px-16 pt-28">
       <div className="flex grow flex-col self-end">
