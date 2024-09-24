@@ -1,37 +1,39 @@
+import Section from "@/components/layout/layout";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { TooltipTrigger } from "@/components/ui/tooltip";
 import { Heading1, Heading2, Heading3, Large, Paragraph } from "@/components/ui/typography";
 import { DoubleArrowDownIcon } from "@radix-ui/react-icons";
 import { Tooltip, TooltipContent } from "@radix-ui/react-tooltip";
+import Link from "next/link";
 import React from "react";
 
 const projects = [{
   title: "Kayf.app",
-  description: "The ultimate tool for information centralization and process automation. Our productivity suite enables efficient note-taking and automation with powerful collaboration and workflow software. Plus, effortlessly search existing communication channels using our advanced semantic search engine, PQuery.",
+  description: "The ultimate tool for information centralization and process automation. Our productivity suite enables efficient note-taking and automation with powerful collaboration and workflow software. Plus, effortlessly search existing communication channels using our advanced semantic search engine, Tracer.",
   tags: ["AI", "Productivity", "Automation"],
-  link: "",
+  link: "https://kayf.app",
   img: "",
 },
 {
   title: "Apeiron-lib",
   description: "Complete library for controlling the robots in Botball. Shift your focus from small implementation details to the actual strategy. The goal was to reduce the learning curve and essentially control the create & wombat using the same interface. Other than a small setup file nothing is else required.",
   tags: ["Robotics", "OpenCV", "Low-level"],
-  link: "",
+  link: "https://github.com/ApeironOrg/apeiron-lib",
   img: "",
 },
 {
   title: "TrackIt",
   description: "Log your calories, macros and workouts in one simple web-app with direct access to large food databases. Self-hosted.",
   tags: ["Nutrition", "Fitness", "Web"],
-  link: "",
+  link: "https://github.com/ahujaankush/TrackIt",
   img: "",
 },
 {
   title: "Aetherized Dotfiles",
   description: "My AwesomeWM desktop & nvim configuration.",
   tags: ["Linux", "Vim", "Lua"],
-  link: "",
+  link: "https://github.com/ahujaankush/AetherizedDots",
   img: "",
 }
 ]
@@ -39,7 +41,7 @@ const projects = [{
 export default function Home() {
   return (
     <main className="flex flex-col grow items-center">
-      <section className="w-2/5 py-16 pt-28">
+      <Section>
         <div className="flex flex-row">
           <Tooltip>
             <TooltipTrigger>
@@ -68,7 +70,7 @@ export default function Home() {
             Projects
           </Button>
         </a>
-      </section>
+      </Section>
       <Separator />
       <section className="w-2/5 py-12 space-y-8">
         <Heading2 id="heading-projects">Projects</Heading2>
@@ -78,7 +80,9 @@ export default function Home() {
               <div className="flex">
                 <div className="flex flex-col flex-row grow space-y-2">
                   <Heading3>
-                    {e.title}
+                    <Link href={e.link} target="_blank">
+                      {e.title}
+                    </Link>
                   </Heading3>
                   <Paragraph>
                     {e.description}

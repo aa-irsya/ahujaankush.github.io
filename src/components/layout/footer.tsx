@@ -1,6 +1,5 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
-import { Button } from '../ui/button';
 import Link from 'next/link';
 import { LinkHoverAnim } from './header';
 import { Large } from '../ui/typography';

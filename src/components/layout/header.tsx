@@ -11,10 +11,12 @@ export function LinkHoverAnim({ children, ...props }: LinkProps & { children: Re
 
 export default function Header() {
   return (
-    <div className="fixed flex flex-row w-full p-6 backdrop-blur-md">
+    <div className="fixed flex flex-row w-full p-6 z-999 backdrop-blur-md">
       <div className="grow flex justify-start">
         <Large>
-          Ankush Ahuja
+          <Link href={'/'}>
+            Ankush Ahuja
+          </Link>
         </Large>
       </div>
       <div className="grow flex justify-end space-x-6">
