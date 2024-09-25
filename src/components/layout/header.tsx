@@ -11,7 +11,7 @@ export function LinkHoverAnim({ children, ...props }: LinkProps & { children: Re
 
 export default function Header() {
   return (
-    <div className="fixed flex flex-row w-full p-6 z-[999] backdrop-blur-md mix-blend-difference text-primary-foreground">
+    <div className="fixed flex flex-row w-full p-6 z-[999] backdrop-blur-md mix-blend-difference text-primary-foreground hidden sm:flex">
       <div className="grow flex justify-start">
         <Large>
           <Link href={'/'}>
