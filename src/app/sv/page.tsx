@@ -80,7 +80,7 @@ export default function SV() {
           <b>Unsere To-Do-Liste?</b> Die seht ihr live. Ihr wisst jederzeit, woran wir arbeiten, welche Aufgaben anstehen und und wie der aktuelle Stand ist.
         </p>
         <p>
-          <b>Eure Anträge?</b> Ihr reicht sie ein, und ihr stimmt darüber ab. Die Anliegen mit den meisten Stimmen bekommen unsere volle Aufmerksamkeit. Keine willkürlichen Prioritäten mehr – ihr entscheidet, was wichtig ist.
+          <b>Eure Anträge?</b> Ihr reicht sie einfach digital ein, und ihr stimmt darüber ab. Die Anliegen mit den meisten Stimmen bekommen unsere volle Aufmerksamkeit. Keine willkürlichen Prioritäten mehr – <b>IHR entscheidet</b>, was wichtig ist.
         </p>
         <p>
           Und das Beste: Ihr könnt jeden Schritt verfolgen. Jeder Antrag, jede Aufgabe, jeder Fortschritt – ihr seht, was wann passiert und wie lange es dauert. Und das alles digital auf einer Plattform auf einem Blick. <b>Wir stehen zu jedem Wort, und ihr seht es schwarz auf weiß.</b>
