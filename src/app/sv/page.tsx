@@ -62,7 +62,7 @@ export default function SV() {
       <Separator />
       <Section className="space-y-2">
         <Heading1 id="transparenz">
-          Transparenz - Jetzt sehr ihr alles!
+          Transparenz - Jetzt wisst ihr es!
         </Heading1>
         <p>
           Genug von der ständigen Unklarheit und den endlosen Fragezeichen! Ab jetzt wisst <b>IHR</b> ganz genau, was läuft, wann es läuft und ob überhaupt etwas passiert!
