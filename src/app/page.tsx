@@ -2,7 +2,7 @@ import Section from "@/components/layout/layout";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { TooltipTrigger } from "@/components/ui/tooltip";
-import { Heading1, Heading2, Heading3, Large, Paragraph } from "@/components/ui/typography";
+import { Heading1, Heading2, Heading3, Paragraph } from "@/components/ui/typography";
 import { DoubleArrowDownIcon } from "@radix-ui/react-icons";
 import { Tooltip, TooltipContent } from "@radix-ui/react-tooltip";
 import Link from "next/link";

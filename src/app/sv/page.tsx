@@ -4,6 +4,14 @@ import { Separator } from "@/components/ui/separator";
 import { Heading1, Large } from "@/components/ui/typography";
 import { ArrowRight } from "lucide-react";
 
+function ElectionProgramItem({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="flex flex-row grow p-4 items-center justify-center">
+      {children}
+    </div>
+  )
+}
+
 function MarketingQuote() {
   return (
     <div className="relative z-10 w-[50rem]">
@@ -52,23 +60,6 @@ export default function SV() {
         </p>
       </Section>
       <Separator />
-      <Section className="flex flex-row grow">
-        <div className="space-y-2">
-          <Heading1 id="wahlprogramm">
-            Jetzt seid IHR dran!
-          </Heading1>
-          <Large>
-            Jetzt geht es um die Zukunft unserer Schule und DEINE Stimme zählt!
-          </Large>
-          <p>Willst du wirklich etwas verändern? Dann bist du hier genau richtig. Setz dich ein, überzeug deine Mitschüler und mach deine Stimme stark! <b>Bei uns bestimmt die Schülerschaft, was passiert.</b> Nur gemeinsam sorgen wir dafür, dass eure Anliegen gehört und umgesetzt werden.
-          </p>
-        </div>
-        <div>
-
-        </div>
-      </Section>
-
-      <Separator />
       <Section className="space-y-2">
         <Heading1 id="transparenz">
           Transparenz - Jetzt sehr ihr alles!
@@ -91,7 +82,42 @@ export default function SV() {
         <Heading1 id="tsz">
           TSZ: TGM-Schülerzentrale
         </Heading1>
+        <Large>
+          Wir reden nicht nur - wir handeln!
+        </Large>
+        <p>
+          Hier ist der Prototyp unseres Konzepts! Überzeugt euch selbst von den Möglichkeiten: Legt Anträge an, kommentiert die Vorschläge anderer, votet für eure Favoriten und verfolgt den Status jedes Antrags in Echtzeit. Gebt uns gerne euer Feedback!
+        </p>
+        <i>
+          Work in Progress - 01.10.2024
+        </i>
       </Section>
+      <Separator />
+      <Section className="flex flex-row grow">
+        <div className="space-y-2">
+          <Heading1 id="wahlprogramm">
+            Jetzt seid IHR dran!
+          </Heading1>
+          <Large>
+            Jetzt geht es um die Zukunft unserer Schule und DEINE Stimme zählt!
+          </Large>
+          <p>
+            Willst du wirklich etwas verändern? Dann bist du hier genau richtig. Setz dich ein, überzeug deine Mitschüler und mach deine Stimme stark! <b>Bei uns bestimmt die Schülerschaft, was passiert.</b> Nur gemeinsam sorgen wir dafür, dass eure Anliegen gehört und umgesetzt werden.
+          </p>
+        </div>
+        <div>
+          <ElectionProgramItem>
+            Abstimmungssystem
+          </ElectionProgramItem>
+          <ElectionProgramItem>
+            Transparenz
+          </ElectionProgramItem>
+          <ElectionProgramItem>
+            Abstimmungssystem
+          </ElectionProgramItem>
+        </div>
+      </Section>
+
     </main >
   )
 }
