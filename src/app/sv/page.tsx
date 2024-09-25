@@ -2,11 +2,11 @@ import Section from "@/components/layout/layout";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Heading1, Large } from "@/components/ui/typography";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Info, LayoutDashboard, Vote } from "lucide-react";
 
 function ElectionProgramItem({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-row grow p-4 items-center justify-center">
+    <div className="flex flex-row p-2 items-center self-end bg-primary text-primary-foreground transition-all hover:mr-2 rounded">
       {children}
     </div>
   )
@@ -105,15 +105,18 @@ export default function SV() {
             Willst du wirklich etwas verändern? Dann bist du hier genau richtig. Setz dich ein, überzeug deine Mitschüler und mach deine Stimme stark! <b>Bei uns bestimmt die Schülerschaft, was passiert.</b> Nur gemeinsam sorgen wir dafür, dass eure Anliegen gehört und umgesetzt werden.
           </p>
         </div>
-        <div>
+        <div className="flex flex-col grow ml-12 space-y-2">
           <ElectionProgramItem>
-            Abstimmungssystem
+            Abstimmungen
+            <Vote className="h-6 ml-2" />
           </ElectionProgramItem>
           <ElectionProgramItem>
             Transparenz
+            <Info className="h-6 ml-2" />
           </ElectionProgramItem>
           <ElectionProgramItem>
-            Abstimmungssystem
+            Schülerzentrale
+            <LayoutDashboard className="h-6 ml-2" />
           </ElectionProgramItem>
         </div>
       </Section>
