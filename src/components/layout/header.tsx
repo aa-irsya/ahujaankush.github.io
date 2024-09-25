@@ -5,13 +5,13 @@ import React from "react";
 export function LinkHoverAnim({ children, ...props }: LinkProps & { children: React.ReactNode, className?: string }
 ) {
   return (
-    <Link className="relative relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" {...props}>{children}</Link>
+    <Link className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center" {...props}>{children}</Link>
   )
 }
 
 export default function Header() {
   return (
-    <div className="fixed flex flex-row w-full p-6 z-[999] backdrop-blur-md">
+    <div className="fixed flex flex-row w-full p-6 z-[999] backdrop-blur-md mix-blend-difference text-primary-foreground">
       <div className="grow flex justify-start">
         <Large>
           <Link href={'/'}>
