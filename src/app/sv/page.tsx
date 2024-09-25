@@ -1,7 +1,7 @@
 import Section from "@/components/layout/layout";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Blockqoute, Heading1, Large } from "@/components/ui/typography";
+import { Heading1, Large } from "@/components/ui/typography";
 import { ArrowRight } from "lucide-react";
 
 function MarketingQuote() {
@@ -38,7 +38,7 @@ export default function SV() {
     <main className="flex flex-col grow items-center">
       <StartingBannerSection />
       <Separator />
-      <Section >
+      <Section className="space-y-2">
         <Heading1>
           Wer bin ich?
         </Heading1>
@@ -53,7 +53,7 @@ export default function SV() {
       </Section>
       <Separator />
       <Section className="flex flex-row grow">
-        <div>
+        <div className="space-y-2">
           <Heading1 id="wahlprogramm">
             Jetzt seid IHR dran!
           </Heading1>
@@ -63,20 +63,35 @@ export default function SV() {
           <p>Willst du wirklich etwas verändern? Dann bist du hier genau richtig. Setz dich ein, überzeug deine Mitschüler und mach deine Stimme stark! <b>Bei uns bestimmt die Schülerschaft, was passiert.</b> Nur gemeinsam sorgen wir dafür, dass eure Anliegen gehört und umgesetzt werden.
           </p>
         </div>
+        <div>
+
+        </div>
       </Section>
 
       <Separator />
-      <Section >
+      <Section className="space-y-2">
         <Heading1 id="transparenz">
-          Transparenz für alle!
+          Transparenz - Jetzt sehr ihr alles!
         </Heading1>
+        <p>
+          Genug von der ständigen Unklarheit und den endlosen Fragezeichen! Ab jetzt wisst <b>IHR</b> ganz genau, was läuft, wann es läuft und ob überhaupt etwas passiert!
+        </p>
+        <p>
+          <b>Unsere To-Do-Liste?</b> Die seht ihr live. Ihr wisst jederzeit, woran wir arbeiten, welche Aufgaben anstehen und und wie der aktuelle Stand ist.
+        </p>
+        <p>
+          <b>Eure Anträge?</b> Ihr reicht sie ein, und ihr stimmt darüber ab. Die Anliegen mit den meisten Stimmen bekommen unsere volle Aufmerksamkeit. Keine willkürlichen Prioritäten mehr – ihr entscheidet, was wichtig ist.
+        </p>
+        <p>
+          Und das Beste: Ihr könnt jeden Schritt verfolgen. Jeder Antrag, jede Aufgabe, jeder Fortschritt – ihr seht, was wann passiert und wie lange es dauert. Und das alles digital auf einer Plattform auf einem Blick. <b>Wir stehen zu jedem Wort, und ihr seht es schwarz auf weiß.</b>
+        </p>
       </Section>
       <Separator />
-      <Section >
+      <Section className="space-y-2">
         <Heading1 id="tsz">
           TSZ: TGM-Schülerzentrale
         </Heading1>
       </Section>
-    </main>
+    </main >
   )
 }
