@@ -46,7 +46,7 @@ export default function SV() {
     <main className="flex flex-col grow items-center">
       <StartingBannerSection />
       <Separator />
-      <Section className="space-y-2 px-4 lg:px-16">
+      <Section className="space-y-2 px-8 lg:px-16">
         <Heading1>
           Wer bin ich?
         </Heading1>
@@ -60,7 +60,7 @@ export default function SV() {
         </p>
       </Section>
       <Separator />
-      <Section className="space-y-2 px-4 lg:px-16">
+      <Section className="space-y-2 px-8 lg:px-16">
         <Heading1 id="transparenz">
           Transparenz - Jetzt wisst ihr es!
         </Heading1>
@@ -78,7 +78,7 @@ export default function SV() {
         </p>
       </Section>
       <Separator />
-      <Section className="space-y-2 px-4 lg:px-16">
+      <Section className="space-y-2 px-8 lg:px-16">
         <Heading1 id="tsz">
           TSZ: TGM-Schülerzentrale
         </Heading1>
@@ -93,7 +93,7 @@ export default function SV() {
         </i>
       </Section>
       <Separator />
-      <Section className="flex flex-col lg:flex-row grow space-y-4 lg:space-y-0 lg:space-x-8 px-4 lg:px-16">
+      <Section className="flex flex-col lg:flex-row grow space-y-4 lg:space-y-0 lg:space-x-8 px-8 lg:px-16">
         <div className="space-y-2">
           <Heading1 id="wahlprogramm">
             Jetzt seid IHR dran!
