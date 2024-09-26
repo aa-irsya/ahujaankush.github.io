@@ -1,3 +1,5 @@
+"use client";
+
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip';
 import Link from 'next/link';
