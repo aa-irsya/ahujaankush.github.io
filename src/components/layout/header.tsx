@@ -7,7 +7,7 @@ import React, { useState } from "react";
 export function LinkHoverAnim({ children, ...props }: LinkProps & { children: React.ReactNode, className?: string }) {
   return (
     <Link
-      className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-white after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-center"
+      className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 hover:after:scale-x-100 after:transition after:duration-300 after:origin-center"
       {...props}
     >
       {children}
@@ -19,7 +19,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed w-full p-6 z-[999] backdrop-blur-md mix-blend-difference text-primary-foreground">
+    <div className="fixed w-full p-6 z-[999] backdrop-blur-md">
       <div className="flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex justify-start">
@@ -33,7 +33,7 @@ export default function Header() {
             onClick={() => setIsOpen(!isOpen)}
             className="text-primary-foreground focus:outline-none"
           >
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg className="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
           </button>
