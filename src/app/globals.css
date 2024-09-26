@@ -93,6 +93,4 @@ html {
 
 #sv-cover {
   background-image: url('/banner.jpg');
-  backdrop-filter: brightness(50%);
-  background-position: center;
 }

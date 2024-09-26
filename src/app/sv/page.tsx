@@ -27,7 +27,7 @@ function MarketingQuote() {
 
 function StartingBannerSection() {
   return (
-    <section id="sv-cover" className="w-full grow h-[35rem] flex flex-col lg:flex-row items-start py-16 px-8 sm:px-16 pt-28 bg-cover">
+    <section id="sv-cover" className="w-full grow min-h-[35rem] flex flex-col lg:flex-row items-start py-16 px-8 sm:px-16 pt-28 bg-cover">
       <div className="flex grow flex-col self-end text-primary-foreground">
         <MarketingQuote />
         <Large><u>Gemeinsam</u> mit Ankush Ahuja für ein besseres TGM.</Large>
