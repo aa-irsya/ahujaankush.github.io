@@ -93,4 +93,5 @@ html {
 
 #sv-cover {
   background-image: url('/banner.jpg');
+  background-position-x: right;
 }
