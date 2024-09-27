@@ -51,12 +51,13 @@ export default function SV() {
           Wer bin ich?
         </Heading1>
         <p>
-          Mein Name ist Ankush Ahuja (5DHIT), und in den letzten Jahren habe ich in verschiedenen Bereichen unserer Schule aktiv mitgewirkt, unter anderem in der Taskforce und im Brandschutz. Dabei habe ich festgestellt, dass die <b>Kommunikation zwischen der Schülerschaft und der Schülervertretung</b> oft <b>ineffektiv</b> ist und viele Anliegen nicht die nötige Aufmerksamkeit erhalten. Ein Grund dafür ist die obsessive Fixierung auf bestimmte Wahlpunkte.
+          Mein Name ist Ankush Ahuja (5DHIT) und mein Ziel ist es, euch die Möglichkeit zu geben, diese Schule aktiv mitzugestalten.
         </p>
         <p>
-          Mit meinem Konzept &quot;<i>Eure Stimme, unser Weg!</i>&quot; möchte ich einen neuen Ansatz einführen: <u>Nicht ich entscheide, was wichtig ist, sondern <b>ihr</b></u>. Eure Meinungen und Ideen sollen direkt die Richtung bestimmen, in die sich unsere Schule bewegt.</p>
+          Mit meinem Konzept <i>„Eure Stimme, unser Weg!“</i> möchte ich einen neuen Ansatz einführen: <u>Nicht ich entscheide, was wichtig ist, sondern <b>ihr</b></u>. So werden die Wünsche der Schülerschaft ernst genommen, und es werden die Probleme angegangen, die euch wirklich betreffen. <b>Eure Meinungen und Ideen sollen direkt die Richtung bestimmen, in die sich unsere Schule entwickelt.</b>
+        </p>
         <p>
-          Ihr habt es in der Hand. Wenn ihr echte Veränderungen wollt, keine Ausreden mehr, dann lasst uns gemeinsam die Dinge anpacken. Jetzt ist die Zeit, eure Stimme zu nutzen!
+          <b>Ihr habt es in der Hand.</b> Wenn ihr echte Veränderungen wollt, dann lasst uns gemeinsam die Dinge anpacken. Jetzt ist die Zeit, eure Stimme zu nutzen!
         </p>
       </Section>
       <Separator />
