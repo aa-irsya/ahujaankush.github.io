@@ -1,4 +1,5 @@
 import Section from "@/components/layout/layout";
+import TSZ from "@/components/tsz";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Heading1, Large } from "@/components/ui/typography";
@@ -79,7 +80,7 @@ export default function SV() {
         </p>
       </Section>
       <Separator />
-      <Section className="space-y-2 px-8 lg:px-16">
+      <Section className="flex flex-col space-y-2 px-8 lg:px-16">
         <Heading1 id="tsz">
           TSZ: TGM-Schülerzentrale
         </Heading1>
@@ -89,9 +90,7 @@ export default function SV() {
         <p>
           Hier ist der Prototyp unseres Konzepts! Überzeugt euch selbst von den Möglichkeiten: Legt Anträge an, kommentiert die Vorschläge anderer, votet für eure Favoriten und verfolgt den Status jedes Antrags in Echtzeit. Gebt uns gerne euer Feedback!
         </p>
-        <i>
-          Work in Progress - 01.10.2024
-        </i>
+        <TSZ />
       </Section>
       <Separator />
       <Section className="flex flex-col lg:flex-row grow space-y-4 lg:space-y-0 lg:space-x-8 px-8 lg:px-16">
