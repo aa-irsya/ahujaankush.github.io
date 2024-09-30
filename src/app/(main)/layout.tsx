@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react"
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Header from "@/components/layout/header";
 import { TooltipProvider } from "@radix-ui/react-tooltip";
 import Footer from "@/components/layout/footer";
