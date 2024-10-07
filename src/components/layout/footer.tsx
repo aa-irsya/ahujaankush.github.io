@@ -9,7 +9,7 @@ import { Large } from '../ui/typography';
 const socials = [
   {
     name: "E-Mail",
-    link: "mailto:aahuja06@proton.me",
+    link: "mailto:contact@ahuja.app",
     icon: <Mail color='white' />
   },
   {
