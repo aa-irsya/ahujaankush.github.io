@@ -40,7 +40,7 @@ const projects = [{
 
 export default function Home() {
   return (
-    <main className="flex flex-col grow items-center px-6 md:px-0">
+    <main className="flex flex-col grow items-center px-6 md:px-0 mt-20">
       <Section>
         <div className="flex flex-row">
           <Heading1>
@@ -54,7 +54,7 @@ export default function Home() {
           I love solving problems, especially when it comes to math and algorithms. <br />
           Right now, I&apos;m diving deep into AI while finishing up my HTL education at TGM.
         </Paragraph>
-        <a href="/#heading-projects">
+        <a href="/#projects">
           <Button className="mt-6">
             <DoubleArrowDownIcon className="mr-2" />
             Projects
@@ -62,12 +62,12 @@ export default function Home() {
         </a>
       </Section>
       <Separator />
-      <section className="w-2/5 py-12 space-y-8">
-        <Heading2 id="heading-projects">Projects</Heading2>
+      <Section>
+        <Heading2 id="projects">Projects</Heading2>
         {
           projects.map((e, i) => (
             <div className="flex flex-col space-y-8" key={`selected-projects-${i}`}>
-              <div className="flex">
+              <div className="flex mt-6">
                 <div className="flex flex-col flex-row grow space-y-2">
                   <Heading3>
                     <Link href={e.link} target="_blank">
@@ -90,7 +90,7 @@ export default function Home() {
             </div>
           ))
         }
-      </section>
+      </Section>
     </main>
   );
 }

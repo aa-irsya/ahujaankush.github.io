@@ -48,7 +48,7 @@ export default function Footer() {
         <LinkHoverAnim href="/Resume.pdf" locale={false}>RESUME</LinkHoverAnim>
       </div>
       <Large className="flex self-center">
-        Ankush Ahuja, 2024
+       &copy;	2024 Ankush Ahuja. All rights reserved.
       </Large>
     </div>
   );
