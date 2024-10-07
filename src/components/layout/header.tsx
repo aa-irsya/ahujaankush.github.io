@@ -21,7 +21,6 @@ export default function Header() {
   return (
     <div className="fixed w-full p-6 z-[999] backdrop-blur-md">
       <div className="flex justify-between items-center">
-        {/* Logo Section */}
         <div className="flex justify-start">
           <Large>
             <Link href="/">Ankush Ahuja</Link>

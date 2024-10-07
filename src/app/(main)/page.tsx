@@ -40,24 +40,14 @@ const projects = [{
 
 export default function Home() {
   return (
-    <main className="flex flex-col grow items-center">
+    <main className="flex flex-col grow items-center px-6 md:px-0">
       <Section>
         <div className="flex flex-row">
-          <Tooltip>
-            <TooltipTrigger>
-              <Heading1 className="italic">
-                Servus
-              </Heading1>
-            </TooltipTrigger>
-            <TooltipContent>
-              <Paragraph>
-                Local (austrian) greeting
-              </Paragraph>
-            </TooltipContent>
-          </Tooltip>
-          <Heading1>, I&apos;m Ankush Ahuja.</Heading1>
+          <Heading1>
+            <span className="italic">Servus</span>, I&apos;m Ankush Ahuja.
+          </Heading1>
         </div>
-        <Paragraph className="w-[45rem]">
+        <Paragraph>
           CS & AI student from Vienna, Austria. <br />
           I&apos;ve always been curious about how things work. As a kid, I would take apart my toys just to see what was inside. That curiosity stuck with me and now drives how I learn. Instead of just focusing on one tool, I like to dig into the ideas and concepts behind it. This way of learning has made everything more interesting and keeps me excited about what I do.
 

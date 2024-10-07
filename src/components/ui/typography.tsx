@@ -2,7 +2,7 @@ import { HTMLAttributes } from "react";
 
 const Heading1 = ({
   children,
-  className,
+  className = '',
   ...props
 }: HTMLAttributes<HTMLHeadingElement>) => {
   return (
@@ -17,7 +17,7 @@ const Heading1 = ({
 
 const Heading2 = ({
   children,
-  className,
+  className = '',
   ...props
 }: HTMLAttributes<HTMLHeadingElement>) => {
   return (
@@ -32,7 +32,7 @@ const Heading2 = ({
 
 const Heading3 = ({
   children,
-  className,
+  className = '',
   ...props
 }: HTMLAttributes<HTMLHeadingElement>) => {
   return (
@@ -47,7 +47,7 @@ const Heading3 = ({
 
 const Heading4 = ({
   children,
-  className,
+  className = '',
   ...props
 }: HTMLAttributes<HTMLHeadingElement>) => {
   return (
@@ -62,7 +62,7 @@ const Heading4 = ({
 
 const Lead = ({
   children,
-  className,
+  className = '',
   ...props
 }: HTMLAttributes<HTMLParagraphElement>) => {
   return (
@@ -74,7 +74,7 @@ const Lead = ({
 
 const Paragraph = ({
   children,
-  className,
+  className = '',
   ...props
 }: HTMLAttributes<HTMLParagraphElement>) => {
   return (
@@ -89,7 +89,7 @@ const Paragraph = ({
 
 const Blockqoute = ({
   children,
-  className,
+  className = '',
   ...props
 }: HTMLAttributes<HTMLQuoteElement>) => {
   return (
@@ -104,7 +104,7 @@ const Blockqoute = ({
 
 const Large = ({
   children,
-  className,
+  className = '',
   ...props
 }: HTMLAttributes<HTMLParagraphElement>) => {
   return (
@@ -116,7 +116,7 @@ const Large = ({
 
 const Small = ({
   children,
-  className,
+  className = '',
   ...props
 }: HTMLAttributes<HTMLParagraphElement>) => {
   return (
@@ -131,7 +131,7 @@ const Small = ({
 
 const Mute = ({
   children,
-  className,
+  className = '',
   ...props
 }: HTMLAttributes<HTMLHeadingElement>) => {
   return (
@@ -143,7 +143,7 @@ const Mute = ({
 
 const InlineCode = ({
   children,
-  className,
+  className = '',
   ...props
 }: HTMLAttributes<HTMLParagraphElement>) => {
   return (
