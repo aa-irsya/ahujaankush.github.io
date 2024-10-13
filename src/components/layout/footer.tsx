@@ -26,7 +26,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <div className="flex flex-col grow p-8 space-y-4 justify-center items-center bg-secondary">
+    <div className="flex flex-col p-8 space-y-4 justify-center items-center bg-secondary">
       <div className="flex flex-row space-x-5 self-center">
         {socials.map((e, i) => (
           <Tooltip key={`tooltip-footer-icons-${i}`}>
