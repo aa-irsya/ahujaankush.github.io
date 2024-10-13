@@ -6,6 +6,7 @@ import Header from "@/components/layout/header";
 import { TooltipProvider } from "@radix-ui/react-tooltip";
 import Footer from "@/components/layout/footer";
 import { Separator } from "@/components/ui/separator";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,12 +24,19 @@ export default function RootLayout({
     <html lang="en">
       <Analytics />
       <body className={`${inter.className} flex flex-col`}>
-        <TooltipProvider >
-          <Header />
-          {children}
-          <Separator />
-          <Footer />
-        </TooltipProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <TooltipProvider >
+            <Header />
+            {children}
+            <Separator />
+            <Footer />
+          </TooltipProvider>
+        </ThemeProvider>
       </body>
     </html >
   );

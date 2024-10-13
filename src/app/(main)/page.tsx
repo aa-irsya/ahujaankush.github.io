@@ -1,12 +1,14 @@
+"use client"
+
 import Section from "@/components/layout/layout";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { TooltipTrigger } from "@/components/ui/tooltip";
+
 import { Heading1, Heading2, Heading3, Paragraph } from "@/components/ui/typography";
 import { DoubleArrowDownIcon } from "@radix-ui/react-icons";
-import { Tooltip, TooltipContent } from "@radix-ui/react-tooltip";
 import Link from "next/link";
 import React from "react";
+import { Typewriter } from 'react-simple-typewriter'
 
 const projects = [{
   title: "Kayf.app",
@@ -44,7 +46,15 @@ export default function Home() {
       <Section>
         <div className="flex flex-col md:space-y-6 lg:space-y-0">
           <Heading1 className="!text-[10vw]">
-            Servus!
+            <Typewriter
+              words={['Hello!', 'Servus!', 'Bonjour!', 'Hola!']}
+              loop={5}
+              cursor
+              cursorStyle='_'
+              typeSpeed={75}
+              deleteSpeed={50}
+              delaySpeed={3000}
+            />
           </Heading1>
           <Heading2>
             I&apos;m Ankush Ahuja. I&apos;m interested in CS & AI.

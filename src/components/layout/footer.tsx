@@ -10,17 +10,17 @@ const socials = [
   {
     name: "E-Mail",
     link: "mailto:contact@ahuja.app",
-    icon: <Mail color='white' />
+    icon: <Mail className='text-secondary' />
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/ahujaankush/",
-    icon: <Linkedin color='white' />
+    icon: <Linkedin className='text-secondary' />
   },
   {
     name: "GitHub",
     link: "https://github.com/ahujaankush",
-    icon: <Github color='white' />
+    icon: <Github className='text-secondary' />
   }
 ];
 
