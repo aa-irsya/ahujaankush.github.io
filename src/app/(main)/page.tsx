@@ -42,13 +42,15 @@ export default function Home() {
   return (
     <main className="flex flex-col grow items-center px-6 md:px-0 mt-20">
       <Section>
-        <div className="flex flex-row">
-          <Heading1>
-            <span className="italic">Servus</span>, I&apos;m Ankush Ahuja.
+        <div className="flex flex-col md:space-y-6 lg:space-y-0">
+          <Heading1 className="!text-[10vw]">
+            Servus!
           </Heading1>
+          <Heading2>
+            I&apos;m Ankush Ahuja. I&apos;m interested in CS & AI.
+          </Heading2>
         </div>
         <Paragraph>
-          CS & AI student from Vienna, Austria. <br />
           I&apos;ve always been curious about how things work. As a kid, I would take apart my toys just to see what was inside. That curiosity stuck with me and now drives how I learn. Instead of just focusing on one tool, I like to dig into the ideas and concepts behind it. This way of learning has made everything more interesting and keeps me excited about what I do.
 
           I love solving problems, especially when it comes to math and algorithms. <br />
