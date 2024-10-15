@@ -12,14 +12,14 @@ const organizations = [
   {
     company: "Vienna University of Technology",
     position: "Machine Learning Intern",
-    description: "WIP",
+    description: "Developed a service to search through multiple document providers simultaneously using a hybrid BM25 and FAISS cosine similarity approach. This internship laid the foundation for https://kayf.app/tracer and allowed me to experiment with various NLP techniques while receiving support from university staff.",
     timeframe: "July 2024 - August 2024",
     link: "https://www.tuwien.at/en/",
   },
   {
     company: "Dynatrace Autria GmbH",
     position: "Software Engineering Intern",
-    description: "WIP",
+    description: "Developed multiple workflow actions for the Dynatrace Slack App while gaining insights about designing large applications, the Dynatrace observability platform and agile methodologies.",
     timeframe: "July 2023 - August 2023",
     link: "https://www.dynatrace.com/",
   },

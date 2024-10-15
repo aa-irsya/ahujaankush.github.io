@@ -1,10 +1,8 @@
 "use client"
 
 import Section from "@/components/layout/layout";
-import { Separator } from "@/components/ui/separator";
 
-import { Heading1, Heading2, Heading3, Large, Mute, Paragraph } from "@/components/ui/typography";
-import Link from "next/link";
+import { Heading1 } from "@/components/ui/typography";
 import React from "react";
 import { Typewriter } from 'react-simple-typewriter'
 
@@ -15,7 +13,7 @@ export default function Education() {
         <div className="flex flex-col md:space-y-6 lg:space-y-0">
           <Heading1 >
             <Typewriter
-              words={['WIP', 'Work In Progress']}
+              words={['WIP', 'Work In Progress', "I'm still working on my papers..."]}
               loop={5}
               cursor
               cursorStyle='_'
