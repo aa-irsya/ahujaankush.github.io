@@ -23,7 +23,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <Analytics />
-            <body className={`${manrope.className} flex flex-col min-h-screen relative`}>
+            <body className={`${manrope.className} flex flex-col min-h-screen relative overflow-y-hidden`}>
                 <ThemeProvider
                     attribute="class"
                     defaultTheme="system"
