@@ -11,20 +11,26 @@ import React from "react";
 import { Typewriter } from 'react-simple-typewriter'
 
 const summary = [{
-    title: "Kayf.app",
-    description: <>The ultimate tool for information centralization and process automation. Our productivity suite enables efficient note-taking and automation with powerful collaboration and workflow software. Plus, effortlessly search existing communication channels using our advanced semantic search engine, Tracer.</>,
+    title: "Kayf",
+    description: <>Data centralization & processing platform. Our application consists of a scalable enterprise search, allowing users to search across all workspaces simultaneously, and a real-time note-taking editor. The editor integrates seamlessly with workflow action providers, enabling users to directly access and process tracked data with ease.
+        <br />
+        Break free from the grind and reclaim your time with Kayf!</>,
     tags: ["AI", "Productivity", "Automation"],
     link: "https://kayf.app",
 },
 {
-    title: "Apeiron-lib",
-    description: <>Complete library for controlling the robots in Botball. Shift your focus from small implementation details to the actual strategy. The goal was to reduce the learning curve and essentially control the create & wombat using the same interface. Other than a small setup file nothing is else required.</>,
+    title: "Robotics",
+    description: <>
+        Team leader for the school&apos;s Botball team. Besides strategy- and organization-related activities, I developed a robotics library to reduce device management overhead for new team members. It implements robot communication via Wi-Fi, advanced object detection via OpenCV, and a navigation system with collision detection. Utilities like a PID motor, smooth servo functions, and a field-to-graph mapper for robot navigation are included as well.
+    </>,
     tags: ["Robotics", "OpenCV", "Low-level"],
     link: "https://github.com/ApeironOrg/apeiron-lib",
 },
 {
-    title: "TrackIt",
-    description: <>Log your calories, macros and workouts in one simple web-app with direct access to large food databases. Self-hosted.</>,
+    title: "Fitness",
+    description: <>
+        I enjoy powerlifting, and I appreciate open-source software. Thus, I developed TrackIt - a web app that allows you to log your calories, macros, and workouts in one simple interface, with direct access to large food databases. It&apos;s self-hosted.
+    </>,
     tags: ["Nutrition", "Fitness", "Web"],
     link: "https://github.com/ahujaankush/TrackIt",
 },
@@ -32,7 +38,7 @@ const summary = [{
     title: "School Representative",
     description: <>Elected as one of the three representatives of Vienna&apos;s largest high school. Member of the SGA, a committee responsible for making decisions and organizing events for around 2,700 students and over 400 teachers.</>,
     tags: ["Organization", "Decision Making", "SGA"],
-    link: "https://github.com/ahujaankush/AetherizedDots",
+    link: "https://www.tgm.ac.at/",
 }
 ]
 
@@ -40,8 +46,8 @@ export default function Home() {
     return (
         <main className="flex w-screen flex-col grow items-center px-6 md:px-0 mt-20">
             <Section>
-                <div className="absolute mt-[-30vw] right-[-30vw] w-[60vw] h-[60vw] rounded-full green-circle"></div>
-                <div className="absolute mt-[35vh] left-[-20vw] w-[30vw] h-[30vw] rounded-full blue-circle"></div>
+                <div className="absolute mt-[-30vmax] right-[-30vmax] w-[60vmax] h-[60vmax] rounded-full green-circle" />
+                <div className="absolute mt-[35vmax] left-[-20vmax] w-[30vmax] h-[30vmax] rounded-full blue-circle" />
                 <div className="flex flex-col md:space-y-6 lg:space-y-0">
                     <Heading1 className="!text-[10vw]">
                         <Typewriter
@@ -55,7 +61,7 @@ export default function Home() {
                         />
                     </Heading1>
                     <Heading2>
-                        I&apos;m Ankush Ahuja. I&apos;m interested in CS & AI.
+                        I&apos;m Ankush. I enjoy solving problems.
                     </Heading2>
                 </div>
                 <Paragraph>
@@ -64,16 +70,15 @@ export default function Home() {
                     I love solving problems, especially when it comes to math and algorithms. <br />
                     Right now, I&apos;m diving deep into AI while finishing up my HTL education at tgm.
                 </Paragraph>
-                <a href="/#overview">
+                <Link href="/#overview">
                     <Button className="mt-6">
                         <DoubleArrowDownIcon className="mr-2" />
                         Overview
                     </Button>
-                </a>
+                </Link>
             </Section>
-            <Separator />
+            <Separator className="z-[-2]" />
             <Section>
-                <div className="absolute mt-[50vh] right-[5vw] w-[20vw] h-[20vw] rounded-full red-circle"></div>
                 <Heading2 id="overview">Overview</Heading2>
                 {
                     summary.map((e, i) => (
@@ -97,10 +102,11 @@ export default function Home() {
                                     </div>
                                 </div>
                             </div>
-                            {i < summary.length - 1 ? <Separator /> : null}
+                            {i < summary.length - 1 ? <Separator className="z-[-2]" /> : null}
                         </div>
                     ))
                 }
+                <div className="absolute mt-[-10vmax] right-[-6vmax] w-[20vmax] h-[20vmax] rounded-full red-circle" />
             </Section>
         </main>
     );

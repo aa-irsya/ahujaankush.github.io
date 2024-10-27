@@ -95,19 +95,25 @@ html, body {
 }
 
 .green-circle {
-    z-index: -999;
+    z-index: -1;
     box-shadow: 0 0 100px 20px #6ad798ff;
     background: radial-gradient(circle, #a1dda8ff, #6ad798ff 55%, #ffffff 100%);
 }
 
 .blue-circle {
-    z-index: -999;
+    z-index: -1;
     box-shadow: 0 0 100px 20px #69c9d8ff;
     background: radial-gradient(circle, #a1bcddff, #6abdd7ff 55%, #ffffff 100%);
 }
 
 .red-circle {
-    z-index: -999;
+    z-index: -1;
     box-shadow: 0 0 100px 20px #d86997ff;
     background: radial-gradient(circle, #dda1b2ff, #d76a8aff 55%, #ffffff 100%);
+}
+
+.purple-circle{
+    z-index: -1;
+    box-shadow: 0 0 100px 20px #a169d8ff;
+    background: radial-gradient(circle, #c4a1ddff, #a76ad7ff 55%, #ffffff 100%);
 }
