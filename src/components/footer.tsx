@@ -5,6 +5,8 @@ import { motion } from "motion/react";
 import { ScrollView } from "./scroll-view";
 import { NAV_LINKS } from "@/content/nav";
 
+const footer_links = [...NAV_LINKS, { name: "Imprint", href: "/imprint" }]
+
 export default function FooterSection() {
     return (
         <footer className="py-16 md:py-32">
@@ -20,7 +22,7 @@ export default function FooterSection() {
                 </ScrollView>
                 <ScrollView stagger delay={0.1}>
                     <div className="my-8 flex flex-wrap justify-center gap-6 text-sm">
-                        {NAV_LINKS.map((link, index) => (
+                        {footer_links.map((link, index) => (
                             <div key={link.name}>
                                 <motion.div
                                     variants={{
