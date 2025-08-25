@@ -38,7 +38,7 @@ export default function ServicesSection() {
                     </ScrollView>
                     <ScrollView delay={0.2}>
                         <p>
-                            Tired of drowning in repetitive tasks, scattered data, or tools that don&apos;t talk to each other? I help teams cut through the noise, reducing overhead, eliminating inefficiencies, and freeing you up to focus on what really matters: your product, your customers, and your growth. Whether you need someone to integrate into your existing team and move a project forward, or to independently audit your systems and build what&apos;s missing, I adapt to what works best. I&apos;m tool-agnostic and build custom solutions when off-the-shelf isn&apos;t enough.
+                            Sick of wasting time on repeat tasks, messy data, or tools that never connect? I help your team work smoother by cutting overhead, fixing inefficiencies, and freeing you to focus on what actually grows your business. Need an extra set of hands inside your team? I can jump in and push projects forward. Need someone to step back, audit your systems, and build what is missing? I do that too. I use whatever tools fit best and create custom solutions when nothing off the shelf gets the job done.
                         </p>
                     </ScrollView>
                 </div>

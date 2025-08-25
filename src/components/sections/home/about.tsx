@@ -10,41 +10,38 @@ interface Quicklink {
 };
 
 const quicklinks: Quicklink[] = [
-    {
-        title: "Curriculum Vitae",
-        description:
-            "A snapshot of my experience, skills, and background. Available for quick reference or download.",
-        image: "/images/abstract-1.png",
-        links: [
-            { title: "Download CV", link: "/cv.pdf" }
-        ]
-    },
+  {
+    title: "Curriculum Vitae",
+    description:
+      "See a clear snapshot of my experience, skills, and background. Easy to browse or download for reference.",
+    image: "/images/abstract-1.png",
+    links: [{ title: "Download CV", link: "/cv.pdf" }],
+  },
 
-    {
-        title: "Awards",
-        description:
-            "A detailed record of my competition achievements and recognitions, demonstrating proven problem-solving capabilities and technical excellence.",
-        image: "/images/abstract-2.png",
-        links: [
-            { title: "ICPC", link: "/icpc" },
-            { title: "Codeforces", link: "/codeforces" },
-            { title: "Cloudflight Coding Contest", link: "/ccc" },
-            { title: "Jugend Innovativ", link: "/jugend-innovativ" }
-        ]
-    },
+  {
+    title: "Awards",
+    description:
+      "Check out my competition wins and recognitions that show proven problem-solving skills and technical strength.",
+    image: "/images/abstract-2.png",
+    links: [
+      { title: "ICPC", link: "/icpc" },
+      { title: "Codeforces", link: "/codeforces" },
+      { title: "Cloudflight Coding Contest", link: "/ccc" },
+      { title: "Jugend Innovativ", link: "/jugend-innovativ" },
+    ],
+  },
 
-    {
-        title: "Projects & Publications",
-        description:
-            "A diverse collection of my work — including projects, case studies, articles, talks, and collaborations across different fields.",
-        image: "/images/abstract-3.png",
-        links: [
-            { title: "Diploma Thesis: Kayf", link: "/diploma-thesis-kayf" },
-            { title: "GCER: Choros", link: "/gcer-choros" },
-        ]
-    },
+  {
+    title: "Projects & Publications",
+    description:
+      "Explore my work including projects, case studies, articles, talks, and collaborations across different fields.",
+    image: "/images/abstract-3.png",
+    links: [
+      { title: "Diploma Thesis: Kayf", link: "/diploma-thesis-kayf" },
+      { title: "GCER: Choros", link: "/gcer-choros" },
+    ],
+  },
 ];
-
 
 export default function AboutSection() {
     return (
@@ -58,7 +55,7 @@ export default function AboutSection() {
                     </ScrollView>
                     <ScrollView>
                         <p>
-                            I solve problems by building solutions that stick. They work with your workflow, grow as you grow, and keep producing results. I can work alongside your team or handle it solo. What I care about most is making things simple, impactful, and lasting.
+                            I fix problems by building solutions that actually stick. They fit how you work, scale as you grow, and keep driving results. I can plug into your team or run with it myself. What matters most is making things simple, impactful, and built to last.
                         </p>
                     </ScrollView>
                 </div>
